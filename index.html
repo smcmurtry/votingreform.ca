@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Voting Reform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive graphic to explain some of the voting systems being proposed for Canada.">
+
+  <script src="./js/d3.v3.min.js"></script>
+  <!-- <script src="./js/queue.js"></script> -->
+  <!-- <script src="https://d3js.org/d3-queue.v3.min.js"></script> -->
+  <script src="./js/d3-queue.v3.min.js"></script>
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/index.css">
+  <meta property="og:image" content="./img/voting_reform.png" />
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-59457353-2', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+<body>
+  <div id='main'>
+
+  <div id='nav'>
+    <div id='nav-inner'>
+    <div class='dropdown-div'>
+      <label>Choose a voting system</label>
+      <select id='voting-system-dropdown'></select>
+    </div>
+    <div class='dropdown-div'>
+      <label>Show results for</label>
+      <select id='region-dropdown'></select>
+    </div>
+  </div>
+  </div>
+
+  <h1 id='top-content'>Voting Reform</h1>
+
+    <div class='section' id='desc-section'>
+      <h2>How does <span id='system-title' class='changeable'>First Past the Post</span> work?</h2>
+
+      <div class='FPTP'>
+        <div>
+          First Past the Post (FPTP) is Canada’s current electoral system. Voters in each riding vote for one candidate in that riding. Whoever has the most votes is elected as the MP for that riding.
+          <span class='source'>— <a href='http://www.samaracanada.com/samara-in-the-classroom/electoral-reform/first-past-the-post/'>Samara</a></div>
+          </span>
+        </div>
+
+        <div class='IRV'>
+          <div>
+            Under alternative vote (AV), each riding elects one Member of Parliament (MP). Voters rank candidates in order of preference. The winning candidate must have the support of a majority of voters in the riding, if necessary via a transfer of votes from eliminated candidates.
+          <span class='source'>— <a href='http://www.samaracanada.com/samara-in-the-classroom/electoral-reform/alternative-vote/'>Samara</a></div>
+          </span>
+        </div>
+
+      <div class='DMP'>
+        <div>
+          Dual-member proportional representation (DMP) is a voting system designed to produce proportional election results across a region by electing two representatives in each of the region’s districts. The 1st seat in every district is awarded to the candidate who receives the most votes, similar to first-past-the-post voting (FPTP). The 2nd seat is awarded to one of the remaining district candidates so that proportionality is achieved across the region, using a calculation that aims to award parties their seats in the districts where they had their strongest performances.
+          <span class='source'>— <a href='https://en.wikipedia.org/wiki/Dual-member_proportional_representation'>Wikipedia</a></div>
+          </span>
+        </div>
+
+      <div class='MMP'>
+        <div>
+          Mixed-member proportional representation (MMP) is mixed or “hybrid” because it combines elements of proportional and single-member plurality systems. With MMP, voters have a single MP who represents their riding, while other seats are distributed proportionately to total votes cast in the election.
+
+          Voters have two votes: one for a candidate running in their riding, and a second for a party or a candidate on a party list.
+          <span class='source'>— <a href='http://www.samaracanada.com/samara-in-the-classroom/electoral-reform/mixed-member-proportional-representation/'>Samara</a></div>
+          </span>
+        </div>
+
+        <div class='STV'>
+          <div>
+            The single transferable vote (STV) combines elements of different systems to both achieve a relatively proportional result and to elect MPs from specific constituencies. It has ranked ballots and large ridings, each with multiple elected MPs.
+            <span class='source'>— <a href='http://www.samaracanada.com/samara-in-the-classroom/electoral-reform/single-transferable-vote'>Samara</a></div>
+            </span>
+          </div>
+
+
+    </div>
+
+    <div class='section' id='section2'>
+
+      <h2 class='FPTP'>What was the outcome in 2015?</h2>
+      <h2 class='DMP'>What if we'd used <span class='changeable'>Dual Member Proportional</span> in 2015?</h2>
+      <h2 class='MMP'>What if we'd used <span class='changeable'>Mixed Member Proportional</span> in 2015?</h2>
+      <h2 class='IRV'>What if we'd used <span class='changeable'>Alternative Vote</span> in 2015?</h2>
+      <h2 class='STV'>What if we'd used <span class='changeable'>Single Transferable Vote</span> in 2015?</h2>
+
+
+      <p class='FPTP'>The results below are the actual election results from 2015.</p>
+      <p class='DMP STV'>The results below are from a simulation done using Elections Canada voting results. They do not take into account changes in voting behaviour that would result from a change to the electoral system.</p>
+      <p class='MMP'>
+        The results below are from a simulation done using Elections Canada voting results. The MMP system presented here is one possible design that uses regions with an average of 10 MPs - other designs could have bigger or smaller regions. The results do not take into account changes in voting behaviour that would result from a change to the electoral system.</p>
+      <p class='IRV'>The results below are from a simulation done using Elections Canada voting results and exit polling to ask about second choices. They do not take into account changes in voting behaviour that would result from a change to the electoral system.</p>
+
+      <div class='chart'>
+        <svg id='table-chart'></svg>
+      </div>
+
+      <div id='explanatory-text-2'>
+        <p>If the share of MPs elected is close to the share of the vote each party receives, the voting system is proportional.</p>
+      </div>
+
+
+
+      <div id='bar-charts'>
+        <div id='chart2' class='chart'>
+          <div class='title'>Share of MPs (%)</div>
+          <svg id='bar-chart-1'></svg>
+        </div>
+
+        <div id='chart3' class='chart'>
+          <div class='title'>Share of Vote (%)</div>
+          <svg id='bar-chart-2'></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class='section'>
+
+      <h2>How would seats have been distributed in <span id='region-title' class='changeable'></span>?</h2>
+
+      <div id='explanatory-text'>
+        <p class='FPTP'>Under FPTP, each riding contained one MP.</p>
+        <p class='DMP'>Under DMP, each riding would have been twice as big, and would have contained two local MPs.</p>
+        <p class='MMP'>Under MMP, provinces are split up into regions. Regions have local MPs who each represent a single riding, as well as regional MPs who represent the entire region. In the chart below, each grouping of seats within a province represents a region (R-1 through R-35).</p>
+        <p class='IRV'>Under AV, ridings boundaries would have remained the same, with one MP per riding.</p>
+        <p class='STV'>Under STV, there would have been varying numbers of MPs in each riding.</p>
+      </div>
+
+      <div id='chart' class='chart'>
+        <div class='legend'></div>
+        <svg id='block-chart'></svg>
+      </div>
+
+    </div>
+
+    <div class='section'>
+      <h2>Sources</h2>
+      <p>
+        Results for each voting system for the 2015 election are the result of simulation using Elections Canada data. Mixed Member Proportional results were provided by <a href='http://wilfday.blogspot.ca/'>Wilf Day</a>. <a href='http://www.threehundredeight.com/2015/11/riding-results-with-preferential-ballot.html'>Alternative Vote results</a> were provided by <a href='http://www.threehundredeight.com/'>Éric Grenier</a>. Dual Member Proportional results were provided by <a href='http://rhysgoldstein.com/'>Rhys Goldstein</a>. Single Transferable Vote results were provided by Ryan Campbell. <a href='http://www.elections.ca/content.aspx?section=res&dir=rep/off/42gedata&document=summary&lang=e'>First Past the Post results</a> were obtained from <a href='http://www.elections.ca/home.aspx'>Elections Canada</a>.
+      </p>
+      <p>
+        <a href='http://votingreform.ca'>votingreform.ca</a> was created by <a href='http://stephenmcmurtry.org/'>Stephen McMurtry</a>. This open source project is <a href='https://github.com/smcmurtry/electoral_reform'>available on Github</a>, and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Please <a href='http://stephenmcmurtry.org/#contact'>get in touch</a> if you have questions or comments.
+      </p>
+
+      <div class="center">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+<script src="./js/common.js"></script>
+<script src="./js/table_chart.js"></script>
+<script src="./js/bar_chart.js"></script>
+<script src="./js/block_chart.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
