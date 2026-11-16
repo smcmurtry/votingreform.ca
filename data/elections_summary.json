@@ -1,0 +1,78 @@
+{
+ "2015": {
+  "seats": {
+   "Bloc": 10,
+   "Conservative": 99,
+   "Green": 1,
+   "Liberal": 184,
+   "NDP": 44,
+   "Other": 0
+  },
+  "total_seats": 338,
+  "vote_share": {
+   "Bloc": 0.047,
+   "Conservative": 0.319,
+   "Green": 0.034,
+   "Liberal": 0.395,
+   "NDP": 0.197,
+   "Other": 0.008
+  }
+ },
+ "2019": {
+  "seats": {
+   "Bloc": 32,
+   "Conservative": 121,
+   "Green": 3,
+   "Liberal": 157,
+   "NDP": 24,
+   "Other": 1
+  },
+  "total_seats": 338,
+  "vote_share": {
+   "Bloc": 0.07633,
+   "Conservative": 0.34336,
+   "Green": 0.06547,
+   "Liberal": 0.33123,
+   "NDP": 0.1598,
+   "Other": 0.02381
+  }
+ },
+ "2021": {
+  "seats": {
+   "Bloc": 32,
+   "Conservative": 119,
+   "Green": 2,
+   "Liberal": 160,
+   "NDP": 25,
+   "Other": 0
+  },
+  "total_seats": 338,
+  "vote_share": {
+   "Bloc": 0.07641,
+   "Conservative": 0.3374,
+   "Green": 0.02331,
+   "Liberal": 0.3262,
+   "NDP": 0.17825,
+   "Other": 0.05843
+  }
+ },
+ "2025": {
+  "seats": {
+   "Bloc": 22,
+   "Conservative": 144,
+   "Green": 1,
+   "Liberal": 169,
+   "NDP": 7,
+   "Other": 0
+  },
+  "total_seats": 343,
+  "vote_share": {
+   "Bloc": 0.06295,
+   "Conservative": 0.41308,
+   "Green": 0.01216,
+   "Liberal": 0.43762,
+   "NDP": 0.06286,
+   "Other": 0.01134
+  }
+ }
+}

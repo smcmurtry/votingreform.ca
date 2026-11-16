@@ -1,13 +1,28 @@
 // var page_w = 900;
 var page_w = +d3.select('#main').style('width').slice(0,-2);
 
+// Simulated results for the alternative systems only exist for this election.
+var sim_year = '2015';
+
+var elections = [
+  {label: '2025', abbr: '2025'},
+  {label: '2021', abbr: '2021'},
+  {label: '2019', abbr: '2019'},
+  {label: '2015', abbr: '2015'}
+];
+
 var voting_systems = [
   {label: 'First Past the Post', abbr: 'FPTP'},
-  {label: 'Alternative Vote', abbr: 'IRV'},
-  {label: 'Dual Member Proportional', abbr: 'DMP'},
-  {label: 'Mixed Member Proportional', abbr: 'MMP'},
-  {label: 'Single Transferable Vote', abbr: 'STV'}
+  {label: 'Alternative Vote', abbr: 'IRV', dropdown_label: 'Alternative Vote (2015 simulation)'},
+  {label: 'Dual Member Proportional', abbr: 'DMP', dropdown_label: 'Dual Member Proportional (2015 simulation)'},
+  {label: 'Mixed Member Proportional', abbr: 'MMP', dropdown_label: 'Mixed Member Proportional (2015 simulation)'},
+  {label: 'Single Transferable Vote', abbr: 'STV', dropdown_label: 'Single Transferable Vote (2015 simulation)'}
 ];
+
+var party_labels = {
+  Liberal: 'Liberal', Conservative: 'Conservative', NDP: 'NDP',
+  Bloc: 'Bloc Québécois', Green: 'Green', Other: 'Other'
+};
 
 var provs = ['BC', 'AB', 'SK', 'MB', 'ON', 'QC', 'NB', 'NS', 'PE', 'NL', 'YT', 'NT', 'NU'];
 var parties = ['Liberal', 'Conservative', 'NDP', 'Bloc', 'Green', 'Other'];
@@ -36,7 +51,12 @@ function create_dropdown(id, data_list) {
     .enter()
     .append('option')
     .attr('value', function(d, i) { return i; })
-    .html(function(d) { return d.label; });
+    .html(function(d) { return d.dropdown_label || d.label; });
+}
+
+function set_selected_row(id, data_list, abbr) {
+  var index = data_list.map(function(d) { return d.abbr; }).indexOf(abbr);
+  d3.select(id).property('value', index);
 }
 
 function get_selected_row(id, data_list) {

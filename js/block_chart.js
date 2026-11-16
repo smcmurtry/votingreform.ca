@@ -21,22 +21,20 @@ var blocks = function() {
 
   var g = create_g('#block-chart', width, height, margin);
 
-  function init(error, fptp, dmp, mmp, irv, stv) {
-
+  // rows_by_system: {FPTP: rows, DMP: rows, ...} for one election.
+  // Returns the rows grouped by voting system and province.
+  function prep(rows_by_system) {
     var dataz = {};
-    dataz['FPTP'] = {};
-    dataz['DMP'] = {};
-    dataz['MMP'] = {};
-    dataz['IRV'] = {};
-    dataz['STV'] = {};
-
-    provs.forEach(function(d) {
-      dataz['FPTP'][d] = fptp.filter(function(e) { return e.prov_abbr == d; });
-      dataz['DMP'][d] = dmp.filter(function(e) { return e.prov_abbr == d; });
-      dataz['MMP'][d] = mmp.filter(function(e) { return e.prov_abbr == d; });
-      dataz['IRV'][d] = irv.filter(function(e) { return e.prov_abbr == d; });
-      dataz['STV'][d] = stv.filter(function(e) { return e.prov_abbr == d; });
+    Object.keys(rows_by_system).forEach(function(system) {
+      dataz[system] = {};
+      provs.forEach(function(d) {
+        dataz[system][d] = rows_by_system[system].filter(function(e) { return e.prov_abbr == d; });
+      });
     });
+    return dataz;
+  }
+
+  function init() {
 
     var prov_g = g.selectAll('g.prov')
       .data(provs)
@@ -57,17 +55,16 @@ var blocks = function() {
 
     draw_legend('#chart', legend_entries, page_w, mp_dim, block_padding);
 
-    return dataz;
-
   }
 
   function update(dataz, sel_system, sel_region) {
 
     // show/hide text
-    d3.selectAll('.' + sel_system).style('display', 'block');
-    voting_systems.filter(function(d) { return d.abbr != sel_system; }).forEach(function(d) {
+    // hide everything first, so text shared by several systems is shown correctly
+    voting_systems.forEach(function(d) {
       d3.selectAll('.' + d.abbr).style('display', 'none');
     });
+    d3.selectAll('.' + sel_system).style('display', 'block');
 
     var riding_bbox;
 
@@ -274,6 +271,7 @@ var blocks = function() {
 
 return {
         init: init,
+        prep: prep,
         type: type,
         update: update
     };

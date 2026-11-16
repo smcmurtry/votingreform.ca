@@ -70,9 +70,19 @@ body {
 }
 .dropdown-div {
   padding-top: 5px;
+  flex: 1 1 150px;
+  min-width: 0;
+}
+#nav-inner {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 12px;
+}
+.dropdown-div label {
+  display: block;
 }
 /*hide them all initially*/
-.FPTP, .DMP, .MMP, .IRV {
+.FPTP, .DMP, .MMP, .IRV, .STV {
   display: none;
 }
 
@@ -156,4 +166,39 @@ select:focus {
 .center {
   text-align: center;
   width: 100%;
+}
+
+#summary-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0 0.5rem;
+}
+#summary-table th, #summary-table td {
+  text-align: left;
+  padding: 8px 10px 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: bottom;
+}
+#summary-table thead th {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: grey;
+  border-bottom: 2px solid black;
+}
+#summary-table .num {
+  text-align: right;
+  padding-right: 24px;
+  font-variant-numeric: tabular-nums;
+}
+#summary-table tr.selected th, #summary-table tr.selected td {
+  color: steelblue;
+  font-weight: bold;
+}
+#summary-note, #sim-note {
+  font-size: 0.9rem;
+  color: grey;
+}
+@media (max-width: 500px) {
+  #summary-table { font-size: 0.85rem; }
+  #summary-table .num { padding-right: 10px; }
 }
