@@ -2,34 +2,21 @@ create_dropdown('#election-dropdown', elections);
 create_dropdown('#voting-system-dropdown', voting_systems);
 create_dropdown('#region-dropdown', regions);
 
-function size_nav() {
-  var dropdown_h = +d3.select('#nav-inner').style('height').slice(0, -2);
-  d3.select('#nav').style('height', (dropdown_h+15) + 'px');
-  d3.select('#top-content').style('margin-top', (dropdown_h+15) + 'px');
-}
-size_nav();
-window.addEventListener('resize', size_nav, false);
+// Seven files per election: seat totals, vote/seat shares, and one seat list
+// per voting system. The 2015 files sit in data/, later elections in data/<year>/.
+var years = elections.map(function(d) { return d.abbr; });
+var seat_files = ['fptp', 'dmp', 'mmp', 'irv', 'stv'];
+var files_per_year = 2 + seat_files.length;
 
-// 2015 has simulated results for every voting system; later elections only
-// have the actual (First Past the Post) results.
-var q = d3.queue()
-  .defer(d3.json, './data/elections_summary.json')
-  .defer(d3.json, './data/tot_summary.json')
-  .defer(d3.csv, './data/pct_summary.csv', bars.type)
-  .defer(d3.csv, './data/fptp_clean.csv', blocks.type)
-  .defer(d3.csv, './data/dmp_clean.csv', blocks.type)
-  .defer(d3.csv, './data/mmp_clean.csv', blocks.type)
-  .defer(d3.csv, './data/irv_clean.csv', blocks.type)
-  .defer(d3.csv, './data/stv_clean.csv', blocks.type);
+var q = d3.queue().defer(d3.json, './data/elections_summary.json');
 
-var other_years = elections
-  .map(function(d) { return d.abbr; })
-  .filter(function(year) { return year != sim_year; });
-
-other_years.forEach(function(year) {
-  q.defer(d3.json, './data/' + year + '/tot_summary.json')
-    .defer(d3.csv, './data/' + year + '/pct_summary.csv', bars.type)
-    .defer(d3.csv, './data/' + year + '/fptp_clean.csv', blocks.type);
+years.forEach(function(year) {
+  var dir = (year == contributed_year) ? './data/' : './data/' + year + '/';
+  q.defer(d3.json, dir + 'tot_summary.json')
+    .defer(d3.csv, dir + 'pct_summary.csv', bars.type);
+  seat_files.forEach(function(name) {
+    q.defer(d3.csv, dir + name + '_clean.csv', blocks.type);
+  });
 });
 
 q.awaitAll(function(error, files) {
@@ -39,17 +26,15 @@ q.awaitAll(function(error, files) {
 
   // store[year] = {tot: seats by region/system, pct: share rows, dataz: seat rows}
   var store = {};
-  store[sim_year] = {
-    tot: files[1],
-    pct: files[2],
-    dataz: blocks.prep({FPTP: files[3], DMP: files[4], MMP: files[5], IRV: files[6], STV: files[7]})
-  };
-  other_years.forEach(function(year, i) {
-    var offset = 8 + 3*i;
+  years.forEach(function(year, i) {
+    var offset = 1 + files_per_year*i;
     store[year] = {
       tot: files[offset],
       pct: files[offset+1],
-      dataz: blocks.prep({FPTP: files[offset+2]})
+      dataz: blocks.prep({
+        FPTP: files[offset+2], DMP: files[offset+3], MMP: files[offset+4],
+        IRV: files[offset+5], STV: files[offset+6]
+      })
     };
   });
 
@@ -59,20 +44,7 @@ q.awaitAll(function(error, files) {
   blocks.init();
   draw_summary(summary);
 
-  d3.select('#election-dropdown').on('change', function() {
-    // Simulations only exist for one election, so fall back to the real results.
-    if (get_selected_row('#election-dropdown', elections) != sim_year) {
-      set_selected_row('#voting-system-dropdown', voting_systems, 'FPTP');
-    }
-    update_all();
-  });
-  d3.select('#voting-system-dropdown').on('change', function() {
-    if (get_selected_row('#voting-system-dropdown', voting_systems) != 'FPTP') {
-      set_selected_row('#election-dropdown', elections, sim_year);
-    }
-    update_all();
-  });
-  d3.select('#region-dropdown').on('change', update_all);
+  d3.selectAll('#controls select').on('change', update_all);
 
   update_all();
 
@@ -87,7 +59,9 @@ q.awaitAll(function(error, files) {
     d3.select('#system-title').text(sel_system_label);
     d3.selectAll('.region-name').text(sel_region_label);
     d3.selectAll('.year-label').text(sel_year);
-    d3.select('#sim-note').style('display', (sel_year == sim_year) ? 'none' : 'block');
+    // Text that only applies to the contributed 2015 results, or only to our own simulations.
+    d3.selectAll('.only-contributed').style('display', (sel_year == contributed_year) ? 'inline' : 'none');
+    d3.selectAll('.only-simulated').style('display', (sel_year == contributed_year) ? 'none' : 'inline');
     d3.selectAll('#summary-table tbody tr').classed('selected', function(d) { return d.year == sel_year; });
 
     table.update(store[sel_year].tot, sel_system, sel_region);

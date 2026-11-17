@@ -1,0 +1,345 @@
+riding_name,riding_number,party,prov_abbr,region_number,seat_type
+Avalon + Terra Nova—The Peninsulas,0,Liberal,NL,9,local
+Avalon + Terra Nova—The Peninsulas,0,Conservative,NL,9,local
+Cape Spear + St. John's East,1,Liberal,NL,9,local
+Cape Spear + St. John's East,1,NDP,NL,9,local
+Central Newfoundland + Long Range Mountains,2,Conservative,NL,9,local
+Central Newfoundland + Long Range Mountains,2,Liberal,NL,9,local
+Labrador,3,Liberal,NL,9,local
+Labrador,3,Conservative,NL,9,local
+Cardigan + Charlottetown,4,Liberal,PE,8,local
+Cardigan + Charlottetown,4,Conservative,PE,8,local
+Egmont + Malpeque,5,Liberal,PE,8,local
+Egmont + Malpeque,5,Conservative,PE,8,local
+Acadie—Annapolis + South Shore—St. Margarets,6,Liberal,NS,7,local
+Acadie—Annapolis + South Shore—St. Margarets,6,Conservative,NS,7,local
+Cape Breton—Canso—Antigonish + Sydney—Glace Bay,7,Liberal,NS,7,local
+Cape Breton—Canso—Antigonish + Sydney—Glace Bay,7,Conservative,NS,7,local
+Central Nova + Sackville—Bedford—Preston,8,Liberal,NS,7,local
+Central Nova + Sackville—Bedford—Preston,8,Conservative,NS,7,local
+Cumberland—Colchester + Kings—Hants,9,Liberal,NS,7,local
+Cumberland—Colchester + Kings—Hants,9,Conservative,NS,7,local
+Dartmouth—Cole Harbour + Halifax + Halifax West,10,Liberal,NS,7,local
+Dartmouth—Cole Harbour + Halifax + Halifax West,10,Liberal,NS,7,local
+Acadie—Bathurst + Miramichi—Grand Lake,11,Liberal,NB,6,local
+Acadie—Bathurst + Miramichi—Grand Lake,11,Conservative,NB,6,local
+Beauséjour + Moncton—Dieppe,12,Liberal,NB,6,local
+Beauséjour + Moncton—Dieppe,12,Liberal,NB,6,local
+Fredericton—Oromocto + Saint John—St. Croix,13,Liberal,NB,6,local
+Fredericton—Oromocto + Saint John—St. Croix,13,Conservative,NB,6,local
+Fundy Royal + Saint John—Kennebecasis,14,Liberal,NB,6,local
+Fundy Royal + Saint John—Kennebecasis,14,Conservative,NB,6,local
+Madawaska—Restigouche + Tobique—Mactaquac,15,Conservative,NB,6,local
+Madawaska—Restigouche + Tobique—Mactaquac,15,Liberal,NB,6,local
+Abitibi—Baie-James—Nunavik—Eeyou + Côte-Nord—Kawawachikamach—Nitassinan,16,Bloc,QC,5,local
+Abitibi—Baie-James—Nunavik—Eeyou + Côte-Nord—Kawawachikamach—Nitassinan,16,Liberal,QC,5,local
+Abitibi—Témiscamingue + Pontiac—Kitigan Zibi,17,Liberal,QC,5,local
+Abitibi—Témiscamingue + Pontiac—Kitigan Zibi,17,Bloc,QC,5,local
+Ahuntsic-Cartierville + Saint-Laurent,18,Liberal,QC,5,local
+Ahuntsic-Cartierville + Saint-Laurent,18,Conservative,QC,5,local
+Alfred-Pellan + Bourassa,19,Liberal,QC,5,local
+Alfred-Pellan + Bourassa,19,Conservative,QC,5,local
+Argenteuil—La Petite-Nation + Les Pays-d'en-Haut,20,Liberal,QC,5,local
+Argenteuil—La Petite-Nation + Les Pays-d'en-Haut,20,Bloc,QC,5,local
+Beauce + Mégantic—L'Érable—Lotbinière,21,Conservative,QC,5,local
+Beauce + Mégantic—L'Érable—Lotbinière,21,Conservative,QC,5,local
+Beauharnois—Salaberry—Soulanges—Huntingdon + Vaudreuil,22,Liberal,QC,5,local
+Beauharnois—Salaberry—Soulanges—Huntingdon + Vaudreuil,22,Bloc,QC,5,local
+Beauport—Limoilou + Charlesbourg—Haute-Saint-Charles,23,Conservative,QC,5,local
+Beauport—Limoilou + Charlesbourg—Haute-Saint-Charles,23,Liberal,QC,5,local
+Bécancour—Nicolet—Saurel—Alnôbak + Drummond,24,Bloc,QC,5,local
+Bécancour—Nicolet—Saurel—Alnôbak + Drummond,24,Conservative,QC,5,local
+Bellechasse—Les Etchemins—Lévis + Lévis—Lotbinière,25,Conservative,QC,5,local
+Bellechasse—Les Etchemins—Lévis + Lévis—Lotbinière,25,Conservative,QC,5,local
+Beloeil—Chambly + Saint-Jean,26,Bloc,QC,5,local
+Beloeil—Chambly + Saint-Jean,26,Liberal,QC,5,local
+Berthier—Maskinongé + Trois-Rivières,27,Liberal,QC,5,local
+Berthier—Maskinongé + Trois-Rivières,27,Bloc,QC,5,local
+Brome—Missisquoi + Richmond—Arthabaska,28,Liberal,QC,5,local
+Brome—Missisquoi + Richmond—Arthabaska,28,Bloc,QC,5,local
+Brossard—Saint-Lambert + Ville-Marie—Le Sud-Ouest—Île-des-Soeurs,29,Liberal,QC,5,local
+Brossard—Saint-Lambert + Ville-Marie—Le Sud-Ouest—Île-des-Soeurs,29,Conservative,QC,5,local
+Châteauguay—Les Jardins-de-Napierville + Dorval—Lachine—LaSalle,30,Liberal,QC,5,local
+Châteauguay—Les Jardins-de-Napierville + Dorval—Lachine—LaSalle,30,Conservative,QC,5,local
+Chicoutimi—Le Fjord + Jonquière,31,Bloc,QC,5,local
+Chicoutimi—Le Fjord + Jonquière,31,Conservative,QC,5,local
+Compton—Stanstead + Sherbrooke,32,Liberal,QC,5,local
+Compton—Stanstead + Sherbrooke,32,NDP,QC,5,local
+Côte-du-Sud-Rivière-du-Loup-Kataskomiq-Témiscouata + Montmorency—Charlevoix,33,Conservative,QC,5,local
+Côte-du-Sud-Rivière-du-Loup-Kataskomiq-Témiscouata + Montmorency—Charlevoix,33,Bloc,QC,5,local
+Gaspésie—Les Îles-de-la-Madeleine—Listuguj + Rimouski—La Matapédia,34,Bloc,QC,5,local
+Gaspésie—Les Îles-de-la-Madeleine—Listuguj + Rimouski—La Matapédia,34,Liberal,QC,5,local
+Gatineau + Hull—Aylmer,35,Liberal,QC,5,local
+Gatineau + Hull—Aylmer,35,Conservative,QC,5,local
+Hochelaga—Rosemont-Est + Saint-Léonard—Saint-Michel,36,Liberal,QC,5,local
+Hochelaga—Rosemont-Est + Saint-Léonard—Saint-Michel,36,NDP,QC,5,local
+Honoré-Mercier + La Pointe-de-l'Île,37,Liberal,QC,5,local
+Honoré-Mercier + La Pointe-de-l'Île,37,Bloc,QC,5,local
+Joliette—Manawan + Laurentides—Labelle,38,Bloc,QC,5,local
+Joliette—Manawan + Laurentides—Labelle,38,Liberal,QC,5,local
+La Prairie—Atateken + LaSalle—Émard—Verdun,39,Liberal,QC,5,local
+La Prairie—Atateken + LaSalle—Émard—Verdun,39,Bloc,QC,5,local
+Lac-Saint-Jean + Saint-Maurice—Champlain,40,Liberal,QC,5,local
+Lac-Saint-Jean + Saint-Maurice—Champlain,40,Bloc,QC,5,local
+Lac-Saint-Louis + Pierrefonds—Dollard,41,Liberal,QC,5,local
+Lac-Saint-Louis + Pierrefonds—Dollard,41,Liberal,QC,5,local
+Laurier—Sainte-Marie + Outremont,42,Liberal,QC,5,local
+Laurier—Sainte-Marie + Outremont,42,NDP,QC,5,local
+Laval—Les Îles + Rivière-des-Mille-Îles,43,Liberal,QC,5,local
+Laval—Les Îles + Rivière-des-Mille-Îles,43,Conservative,QC,5,local
+Longueuil—Charles-LeMoyne + Longueuil—Saint-Hubert,44,Liberal,QC,5,local
+Longueuil—Charles-LeMoyne + Longueuil—Saint-Hubert,44,Bloc,QC,5,local
+Louis-Hébert + Québec Centre,45,Liberal,QC,5,local
+Louis-Hébert + Québec Centre,45,Bloc,QC,5,local
+Louis-Saint-Laurent—Akiawenhrahk + Portneuf—Jacques-Cartier,46,Conservative,QC,5,local
+Louis-Saint-Laurent—Akiawenhrahk + Portneuf—Jacques-Cartier,46,Conservative,QC,5,local
+Marc-Aurèle-Fortin + Vimy,47,Liberal,QC,5,local
+Marc-Aurèle-Fortin + Vimy,47,Conservative,QC,5,local
+Mirabel + Thérèse-De Blainville,48,Liberal,QC,5,local
+Mirabel + Thérèse-De Blainville,48,Bloc,QC,5,local
+Mont-Saint-Bruno—L'Acadie + Pierre-Boucher—Les Patriotes—Verchères,49,Liberal,QC,5,local
+Mont-Saint-Bruno—L'Acadie + Pierre-Boucher—Les Patriotes—Verchères,49,Bloc,QC,5,local
+Montcalm + Repentigny,50,Bloc,QC,5,local
+Montcalm + Repentigny,50,Liberal,QC,5,local
+Mount Royal + Notre-Dame-de-Grâce—Westmount,51,Liberal,QC,5,local
+Mount Royal + Notre-Dame-de-Grâce—Westmount,51,Conservative,QC,5,local
+Papineau + Rosemont—La Petite-Patrie,52,Liberal,QC,5,local
+Papineau + Rosemont—La Petite-Patrie,52,NDP,QC,5,local
+Rivière-du-Nord + Terrebonne,53,Bloc,QC,5,local
+Rivière-du-Nord + Terrebonne,53,Liberal,QC,5,local
+Saint-Hyacinthe—Bagot—Acton + Shefford,54,Bloc,QC,5,local
+Saint-Hyacinthe—Bagot—Acton + Shefford,54,Liberal,QC,5,local
+Ajax + Whitby,55,Liberal,ON,4,local
+Ajax + Whitby,55,Conservative,ON,4,local
+Algonquin—Renfrew—Pembroke + Hastings—Lennox and Addington—Tyendinaga,56,Conservative,ON,4,local
+Algonquin—Renfrew—Pembroke + Hastings—Lennox and Addington—Tyendinaga,56,Liberal,ON,4,local
+Aurora—Oak Ridges—Richmond Hill + Richmond Hill South,57,Conservative,ON,4,local
+Aurora—Oak Ridges—Richmond Hill + Richmond Hill South,57,Liberal,ON,4,local
+Barrie South—Innisfil + Barrie—Springwater—Oro-Medonte,58,Conservative,ON,4,local
+Barrie South—Innisfil + Barrie—Springwater—Oro-Medonte,58,Liberal,ON,4,local
+Bay of Quinte + Kingston and the Islands,59,Liberal,ON,4,local
+Bay of Quinte + Kingston and the Islands,59,Conservative,ON,4,local
+Beaches—East York + Toronto—Danforth,60,Liberal,ON,4,local
+Beaches—East York + Toronto—Danforth,60,NDP,ON,4,local
+Bowmanville—Oshawa North + Oshawa,61,Conservative,ON,4,local
+Bowmanville—Oshawa North + Oshawa,61,Liberal,ON,4,local
+Brampton Centre + Brampton West,62,Conservative,ON,4,local
+Brampton Centre + Brampton West,62,Liberal,ON,4,local
+Brampton—Chinguacousy Park + Brampton East,63,Liberal,ON,4,local
+Brampton—Chinguacousy Park + Brampton East,63,Conservative,ON,4,local
+Brampton North—Caledon + Milton East—Halton Hills South,64,Liberal,ON,4,local
+Brampton North—Caledon + Milton East—Halton Hills South,64,Conservative,ON,4,local
+Brampton South + Mississauga—Streetsville,65,Liberal,ON,4,local
+Brampton South + Mississauga—Streetsville,65,Conservative,ON,4,local
+Brantford—Brant South—Six Nations + Haldimand—Norfolk,66,Conservative,ON,4,local
+Brantford—Brant South—Six Nations + Haldimand—Norfolk,66,Liberal,ON,4,local
+Bruce—Grey—Owen Sound + Simcoe—Grey,67,Conservative,ON,4,local
+Bruce—Grey—Owen Sound + Simcoe—Grey,67,Liberal,ON,4,local
+Burlington + Oakville West,68,Liberal,ON,4,local
+Burlington + Oakville West,68,Conservative,ON,4,local
+Burlington North—Milton West + Flamborough—Glanbrook—Brant North,69,Conservative,ON,4,local
+Burlington North—Milton West + Flamborough—Glanbrook—Brant North,69,Liberal,ON,4,local
+Cambridge + Kitchener South—Hespeler,70,Conservative,ON,4,local
+Cambridge + Kitchener South—Hespeler,70,Liberal,ON,4,local
+Carleton + Kanata,71,Liberal,ON,4,local
+Carleton + Kanata,71,Conservative,ON,4,local
+Chatham-Kent—Leamington + Essex,72,Conservative,ON,4,local
+Chatham-Kent—Leamington + Essex,72,Liberal,ON,4,local
+Davenport + Spadina—Harbourfront,73,Liberal,ON,4,local
+Davenport + Spadina—Harbourfront,73,NDP,ON,4,local
+Don Valley North + Scarborough—Agincourt,74,Liberal,ON,4,local
+Don Valley North + Scarborough—Agincourt,74,Conservative,ON,4,local
+Don Valley West + Scarborough Centre—Don Valley East,75,Liberal,ON,4,local
+Don Valley West + Scarborough Centre—Don Valley East,75,Conservative,ON,4,local
+Dufferin—Caledon + King—Vaughan,76,Conservative,ON,4,local
+Dufferin—Caledon + King—Vaughan,76,Liberal,ON,4,local
+Eglinton—Lawrence + Toronto—St. Paul's,77,Liberal,ON,4,local
+Eglinton—Lawrence + Toronto—St. Paul's,77,Conservative,ON,4,local
+Elgin—St. Thomas—London South + London West,78,Liberal,ON,4,local
+Elgin—St. Thomas—London South + London West,78,Conservative,ON,4,local
+Etobicoke Centre + Mississauga—Malton,79,Liberal,ON,4,local
+Etobicoke Centre + Mississauga—Malton,79,Conservative,ON,4,local
+Etobicoke North + Humber River—Black Creek,80,Liberal,ON,4,local
+Etobicoke North + Humber River—Black Creek,80,Conservative,ON,4,local
+Etobicoke—Lakeshore + Mississauga—Lakeshore,81,Liberal,ON,4,local
+Etobicoke—Lakeshore + Mississauga—Lakeshore,81,Conservative,ON,4,local
+Guelph + Wellington—Halton Hills North,82,Liberal,ON,4,local
+Guelph + Wellington—Halton Hills North,82,Conservative,ON,4,local
+Haliburton—Kawartha Lakes + York—Durham,83,Conservative,ON,4,local
+Haliburton—Kawartha Lakes + York—Durham,83,Liberal,ON,4,local
+Hamilton Centre + Hamilton East—Stoney Creek,84,Liberal,ON,4,local
+Hamilton Centre + Hamilton East—Stoney Creek,84,Conservative,ON,4,local
+Hamilton Mountain + Hamilton West—Ancaster—Dundas,85,Liberal,ON,4,local
+Hamilton Mountain + Hamilton West—Ancaster—Dundas,85,Conservative,ON,4,local
+Huron—Bruce + Perth—Wellington,86,Conservative,ON,4,local
+Huron—Bruce + Perth—Wellington,86,Liberal,ON,4,local
+Kapuskasing—Timmins—Mushkegowuk + Nipissing—Timiskaming,87,Conservative,ON,4,local
+Kapuskasing—Timmins—Mushkegowuk + Nipissing—Timiskaming,87,Liberal,ON,4,local
+Kenora—Kiiwetinoong + Thunder Bay—Rainy River,88,Conservative,ON,4,local
+Kenora—Kiiwetinoong + Thunder Bay—Rainy River,88,Liberal,ON,4,local
+Kitchener Centre + Waterloo,89,Liberal,ON,4,local
+Kitchener Centre + Waterloo,89,Conservative,ON,4,local
+Kitchener—Conestoga + Oxford,90,Conservative,ON,4,local
+Kitchener—Conestoga + Oxford,90,Liberal,ON,4,local
+Lanark—Frontenac + Leeds—Grenville—Thousand Islands—Rideau Lakes,91,Conservative,ON,4,local
+Lanark—Frontenac + Leeds—Grenville—Thousand Islands—Rideau Lakes,91,Liberal,ON,4,local
+London Centre + London—Fanshawe,92,Liberal,ON,4,local
+London Centre + London—Fanshawe,92,Conservative,ON,4,local
+Markham—Stouffville + Pickering—Brooklin,93,Liberal,ON,4,local
+Markham—Stouffville + Pickering—Brooklin,93,Conservative,ON,4,local
+Markham—Thornhill + Markham—Unionville,94,Liberal,ON,4,local
+Markham—Thornhill + Markham—Unionville,94,Conservative,ON,4,local
+Middlesex—London + Sarnia—Lambton—Bkejwanong,95,Conservative,ON,4,local
+Middlesex—London + Sarnia—Lambton—Bkejwanong,95,Liberal,ON,4,local
+Mississauga Centre + Mississauga East—Cooksville,96,Liberal,ON,4,local
+Mississauga Centre + Mississauga East—Cooksville,96,Conservative,ON,4,local
+Mississauga—Erin Mills + Oakville East,97,Liberal,ON,4,local
+Mississauga—Erin Mills + Oakville East,97,Conservative,ON,4,local
+Nepean + Ottawa South,98,Liberal,ON,4,local
+Nepean + Ottawa South,98,Conservative,ON,4,local
+Newmarket—Aurora + New Tecumseth—Gwillimbury,99,Conservative,ON,4,local
+Newmarket—Aurora + New Tecumseth—Gwillimbury,99,Liberal,ON,4,local
+Niagara Falls—Niagara-on-the-Lake + St. Catharines,100,Liberal,ON,4,local
+Niagara Falls—Niagara-on-the-Lake + St. Catharines,100,Conservative,ON,4,local
+Niagara South + Niagara West,101,Conservative,ON,4,local
+Niagara South + Niagara West,101,Liberal,ON,4,local
+Northumberland—Clarke + Peterborough,102,Liberal,ON,4,local
+Northumberland—Clarke + Peterborough,102,Conservative,ON,4,local
+Orléans + Ottawa—Vanier—Gloucester,103,Liberal,ON,4,local
+Orléans + Ottawa—Vanier—Gloucester,103,NDP,ON,4,local
+Ottawa Centre + Ottawa West—Nepean,104,Liberal,ON,4,local
+Ottawa Centre + Ottawa West—Nepean,104,NDP,ON,4,local
+Parry Sound—Muskoka + Simcoe North,105,Conservative,ON,4,local
+Parry Sound—Muskoka + Simcoe North,105,Liberal,ON,4,local
+Prescott—Russell—Cumberland + Stormont—Dundas—Glengarry,106,Conservative,ON,4,local
+Prescott—Russell—Cumberland + Stormont—Dundas—Glengarry,106,Liberal,ON,4,local
+Sault Ste. Marie—Algoma + Thunder Bay—Superior North,107,Liberal,ON,4,local
+Sault Ste. Marie—Algoma + Thunder Bay—Superior North,107,Conservative,ON,4,local
+Scarborough North + Scarborough—Woburn,108,Liberal,ON,4,local
+Scarborough North + Scarborough—Woburn,108,Conservative,ON,4,local
+Scarborough—Guildwood—Rouge Park + Scarborough Southwest,109,Liberal,ON,4,local
+Scarborough—Guildwood—Rouge Park + Scarborough Southwest,109,Conservative,ON,4,local
+Sudbury + Sudbury East—Manitoulin—Nickel Belt,110,Liberal,ON,4,local
+Sudbury + Sudbury East—Manitoulin—Nickel Belt,110,Conservative,ON,4,local
+Taiaiako'n—Parkdale—High Park + York South—Weston—Etobicoke,111,Liberal,ON,4,local
+Taiaiako'n—Parkdale—High Park + York South—Weston—Etobicoke,111,NDP,ON,4,local
+Thornhill + Vaughan—Woodbridge,112,Conservative,ON,4,local
+Thornhill + Vaughan—Woodbridge,112,Liberal,ON,4,local
+Toronto Centre + University—Rosedale,113,Liberal,ON,4,local
+Toronto Centre + University—Rosedale,113,NDP,ON,4,local
+Willowdale + York Centre,114,Conservative,ON,4,local
+Willowdale + York Centre,114,Liberal,ON,4,local
+Windsor—Tecumseh—Lakeshore + Windsor West,115,Conservative,ON,4,local
+Windsor—Tecumseh—Lakeshore + Windsor West,115,Liberal,ON,4,local
+Brandon—Souris + Portage—Lisgar,116,Conservative,MB,3,local
+Brandon—Souris + Portage—Lisgar,116,Conservative,MB,3,local
+Churchill—Keewatinook Aski + Provencher,117,Conservative,MB,3,local
+Churchill—Keewatinook Aski + Provencher,117,Liberal,MB,3,local
+Elmwood—Transcona + Kildonan—St. Paul,118,Conservative,MB,3,local
+Elmwood—Transcona + Kildonan—St. Paul,118,Liberal,MB,3,local
+Riding Mountain + Selkirk—Interlake—Eastman,119,Conservative,MB,3,local
+Riding Mountain + Selkirk—Interlake—Eastman,119,Conservative,MB,3,local
+St. Boniface—St. Vital + Winnipeg Centre,120,Liberal,MB,3,local
+St. Boniface—St. Vital + Winnipeg Centre,120,NDP,MB,3,local
+Winnipeg North + Winnipeg West,121,Liberal,MB,3,local
+Winnipeg North + Winnipeg West,121,Conservative,MB,3,local
+Winnipeg South + Winnipeg South Centre,122,Liberal,MB,3,local
+Winnipeg South + Winnipeg South Centre,122,Liberal,MB,3,local
+Battlefords—Lloydminster—Meadow Lake + Prince Albert,123,Conservative,SK,2,local
+Battlefords—Lloydminster—Meadow Lake + Prince Albert,123,Conservative,SK,2,local
+Carlton Trail—Eagle Creek + Saskatoon South,124,Conservative,SK,2,local
+Carlton Trail—Eagle Creek + Saskatoon South,124,Liberal,SK,2,local
+Desnethé—Missinippi—Churchill River + Yorkton—Melville,125,Conservative,SK,2,local
+Desnethé—Missinippi—Churchill River + Yorkton—Melville,125,NDP,SK,2,local
+Moose Jaw—Lake Centre—Lanigan + Regina—Lewvan,126,Conservative,SK,2,local
+Moose Jaw—Lake Centre—Lanigan + Regina—Lewvan,126,Liberal,SK,2,local
+Regina—Qu'Appelle + Regina—Wascana,127,Conservative,SK,2,local
+Regina—Qu'Appelle + Regina—Wascana,127,Liberal,SK,2,local
+Saskatoon—University + Saskatoon West,128,Conservative,SK,2,local
+Saskatoon—University + Saskatoon West,128,Liberal,SK,2,local
+Souris—Moose Mountain + Swift Current—Grasslands—Kindersley,129,Conservative,SK,2,local
+Souris—Moose Mountain + Swift Current—Grasslands—Kindersley,129,Conservative,SK,2,local
+Airdrie—Cochrane + Calgary Skyview,130,Conservative,AB,1,local
+Airdrie—Cochrane + Calgary Skyview,130,Liberal,AB,1,local
+Battle River—Crowfoot + Leduc—Wetaskiwin,131,Conservative,AB,1,local
+Battle River—Crowfoot + Leduc—Wetaskiwin,131,Conservative,AB,1,local
+Bow River + Medicine Hat—Cardston—Warner,132,Conservative,AB,1,local
+Bow River + Medicine Hat—Cardston—Warner,132,Conservative,AB,1,local
+Calgary Centre + Calgary Signal Hill,133,Conservative,AB,1,local
+Calgary Centre + Calgary Signal Hill,133,Liberal,AB,1,local
+Calgary Confederation + Calgary McKnight,134,Conservative,AB,1,local
+Calgary Confederation + Calgary McKnight,134,Liberal,AB,1,local
+Calgary Crowfoot + Calgary Nose Hill,135,Conservative,AB,1,local
+Calgary Crowfoot + Calgary Nose Hill,135,Liberal,AB,1,local
+Calgary East + Calgary Shepard,136,Conservative,AB,1,local
+Calgary East + Calgary Shepard,136,Liberal,AB,1,local
+Calgary Heritage + Calgary Midnapore,137,Conservative,AB,1,local
+Calgary Heritage + Calgary Midnapore,137,Liberal,AB,1,local
+Edmonton Centre + Edmonton Strathcona,138,Conservative,AB,1,local
+Edmonton Centre + Edmonton Strathcona,138,NDP,AB,1,local
+Edmonton Gateway + Edmonton Southeast,139,Conservative,AB,1,local
+Edmonton Gateway + Edmonton Southeast,139,Liberal,AB,1,local
+Edmonton Griesbach + Edmonton Manning,140,Conservative,AB,1,local
+Edmonton Griesbach + Edmonton Manning,140,Liberal,AB,1,local
+Edmonton Northwest + Parkland + St. Albert—Sturgeon River,141,Conservative,AB,1,local
+Edmonton Northwest + Parkland + St. Albert—Sturgeon River,141,Liberal,AB,1,local
+Edmonton Riverbend + Edmonton West,142,Conservative,AB,1,local
+Edmonton Riverbend + Edmonton West,142,Liberal,AB,1,local
+Foothills + Lethbridge,143,Conservative,AB,1,local
+Foothills + Lethbridge,143,NDP,AB,1,local
+Fort McMurray—Cold Lake + Peace River—Westlock,144,Conservative,AB,1,local
+Fort McMurray—Cold Lake + Peace River—Westlock,144,Conservative,AB,1,local
+Grande Prairie + Yellowhead,145,Conservative,AB,1,local
+Grande Prairie + Yellowhead,145,Conservative,AB,1,local
+Lakeland + Sherwood Park—Fort Saskatchewan,146,Conservative,AB,1,local
+Lakeland + Sherwood Park—Fort Saskatchewan,146,Conservative,AB,1,local
+Ponoka—Didsbury + Red Deer,147,Conservative,AB,1,local
+Ponoka—Didsbury + Red Deer,147,Conservative,AB,1,local
+Abbotsford—South Langley + Langley Township—Fraser Heights,148,Conservative,BC,0,local
+Abbotsford—South Langley + Langley Township—Fraser Heights,148,Liberal,BC,0,local
+Burnaby Central + Vancouver Fraserview—South Burnaby,149,Liberal,BC,0,local
+Burnaby Central + Vancouver Fraserview—South Burnaby,149,Conservative,BC,0,local
+Burnaby North—Seymour + Port Moody—Coquitlam,150,Liberal,BC,0,local
+Burnaby North—Seymour + Port Moody—Coquitlam,150,Conservative,BC,0,local
+Cariboo—Prince George + North Island—Powell River,151,Conservative,BC,0,local
+Cariboo—Prince George + North Island—Powell River,151,NDP,BC,0,local
+Chilliwack—Hope + Mission—Matsqui—Abbotsford,152,Conservative,BC,0,local
+Chilliwack—Hope + Mission—Matsqui—Abbotsford,152,Liberal,BC,0,local
+Cloverdale—Langley City + Fleetwood—Port Kells,153,Liberal,BC,0,local
+Cloverdale—Langley City + Fleetwood—Port Kells,153,Conservative,BC,0,local
+Columbia—Kootenay—Southern Rockies + Vernon—Lake Country—Monashee,154,Conservative,BC,0,local
+Columbia—Kootenay—Southern Rockies + Vernon—Lake Country—Monashee,154,Liberal,BC,0,local
+Coquitlam—Port Coquitlam + Pitt Meadows—Maple Ridge,155,Liberal,BC,0,local
+Coquitlam—Port Coquitlam + Pitt Meadows—Maple Ridge,155,Conservative,BC,0,local
+Courtenay—Alberni + Nanaimo—Ladysmith,156,Conservative,BC,0,local
+Courtenay—Alberni + Nanaimo—Ladysmith,156,NDP,BC,0,local
+Cowichan—Malahat—Langford + Saanich—Gulf Islands,157,Conservative,BC,0,local
+Cowichan—Malahat—Langford + Saanich—Gulf Islands,157,NDP,BC,0,local
+Delta + Richmond East—Steveston,158,Liberal,BC,0,local
+Delta + Richmond East—Steveston,158,Conservative,BC,0,local
+Esquimalt—Saanich—Sooke + Victoria,159,Liberal,BC,0,local
+Esquimalt—Saanich—Sooke + Victoria,159,NDP,BC,0,local
+Kamloops—Shuswap—Central Rockies + Kamloops—Thompson—Nicola,160,Conservative,BC,0,local
+Kamloops—Shuswap—Central Rockies + Kamloops—Thompson—Nicola,160,Liberal,BC,0,local
+Kelowna + Okanagan Lake West—South Kelowna + Similkameen—South Okanagan—West Kootenay,161,Conservative,BC,0,local
+Kelowna + Okanagan Lake West—South Kelowna + Similkameen—South Okanagan—West Kootenay,161,Liberal,BC,0,local
+New Westminster—Burnaby—Maillardville + Surrey Centre,162,Liberal,BC,0,local
+New Westminster—Burnaby—Maillardville + Surrey Centre,162,Conservative,BC,0,local
+North Vancouver—Capilano + Vancouver Centre,163,Liberal,BC,0,local
+North Vancouver—Capilano + Vancouver Centre,163,Conservative,BC,0,local
+Prince George—Peace River—Northern Rockies + Skeena—Bulkley Valley,164,Conservative,BC,0,local
+Prince George—Peace River—Northern Rockies + Skeena—Bulkley Valley,164,NDP,BC,0,local
+Richmond Centre—Marpole + West Vancouver—Sunshine Coast—Sea to Sky Country,165,Liberal,BC,0,local
+Richmond Centre—Marpole + West Vancouver—Sunshine Coast—Sea to Sky Country,165,Conservative,BC,0,local
+South Surrey—White Rock + Surrey Newton,166,Liberal,BC,0,local
+South Surrey—White Rock + Surrey Newton,166,Conservative,BC,0,local
+Vancouver East + Vancouver Kingsway,167,NDP,BC,0,local
+Vancouver East + Vancouver Kingsway,167,Liberal,BC,0,local
+Vancouver Granville + Vancouver Quadra,168,Liberal,BC,0,local
+Vancouver Granville + Vancouver Quadra,168,Liberal,BC,0,local
+Yukon,169,Liberal,YT,10,local
+Yukon,169,Conservative,YT,10,local
+Northwest Territories,170,Liberal,NT,11,local
+Northwest Territories,170,Conservative,NT,11,local
+Nunavut,171,NDP,NU,12,local
+Nunavut,171,Liberal,NU,12,local

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>How the Mixed Member Proportional simulation works | Voting Reform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The method and assumptions behind this site's Mixed Member Proportional simulation of Canadian federal elections.">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+  <div id='main'>
+
+  <header id='site-header'>
+    <a id='site-title' href='../'>Voting Reform</a>
+    <nav>
+      <a href='../'>Results</a>
+      <a href='./' class='current'>How the simulations work</a>
+      <a href='../#sources'>Sources</a>
+    </nav>
+  </header>
+  <nav class='subnav'><a href='./'>Overview</a><a href='./alternative-vote.html'>Alternative Vote</a><a href='./dual-member-proportional.html'>Dual Member Proportional</a><a href='./mixed-member-proportional.html' class='current'>Mixed Member Proportional</a><a href='./single-transferable-vote.html'>Single Transferable Vote</a></nav>
+
+  <div class='prose'>
+
+    <h1>How the Mixed Member Proportional simulation works</h1>
+
+    <h2>The system in brief</h2>
+    <p>
+      Under Mixed Member Proportional (MMP), most MPs are still elected in local ridings, but the ridings are larger and there are fewer of them. The remaining MPs are regional: they are added in each region to bring every party's total in line with its share of the region's vote. Voters have two votes, one for a local candidate and one for a party.
+    </p>
+    <p>
+      There are many ways to design an MMP system. The one simulated here is Wilf Day's 2015 model, which is based on the Law Commission of Canada's 2004 recommendation but uses smaller regions.
+    </p>
+
+    <h2>The simulation, step by step</h2>
+    <ol>
+      <li><strong>Group the ridings into regions.</strong> There are 35 regions, averaging about ten MPs each. Smaller provinces are a single region.</li>
+      <li><strong>Set the number of local and regional MPs.</strong> About 62% of a region's MPs are local and the rest regional. In effect, eight of today's ridings become five larger ones.</li>
+      <li><strong>Estimate the local winners.</strong> Each party's local seats are its actual riding wins in the region, scaled down to the smaller number of local seats.</li>
+      <li><strong>Work out each party's fair share.</strong> The region's seats, local and regional together, are divided among the parties in proportion to the votes cast in the region, by largest remainder. A party needs 2% of the vote across the province to take part.</li>
+      <li><strong>Add the regional MPs.</strong> Each party receives regional seats to top its local seats up to its fair share.</li>
+    </ol>
+
+    <h2>Assumptions</h2>
+    <ul>
+      <li><strong>One vote stands in for two.</strong> Real MMP gives voters a local vote and a party vote. The simulation uses the single vote people cast for both.</li>
+      <li><strong>Local winners are estimated by a rule.</strong> No one knows who would win enlarged ridings that do not exist. Wilf Day assigned those seats by hand for 2015, using his knowledge of each area. The code instead scales each party's actual wins in the region down to the number of local seats. This is the main difference from the original.</li>
+      <li><strong>A party keeps any local seats beyond its fair share.</strong> The region's remaining seats are then shared among the other parties, so the House does not grow.</li>
+      <li><strong>The territories each gain a regional MP</strong>, as in the version of the model used for 2015. That is why the simulation has 341 MPs instead of 338 (346 instead of 343 in 2025).</li>
+      <li><strong>The 2% threshold follows the original.</strong> Wilf Day chose it as comparable to a 4% threshold if smaller parties' votes doubled under proportional representation.</li>
+    </ul>
+
+    <h2>The regions</h2>
+    <p>
+      For 2019 and 2021 the regions, and the number of local and regional MPs in each, are exactly Wilf Day's. For the redrawn 2025 ridings, each riding is placed in the region of the older riding that contains its centre. A region then has as many MPs as it has ridings, 62% of them local (Wilf Day's average), rounded to the nearest whole seat.
+    </p>
+
+    <h2>Check against the 2015 simulation</h2>
+    <p>
+      Run on the 2015 election, the code places 4 of 341 seats differently from Wilf Day's result, all in Ontario and Quebec. The cause is the local-winner rule: it differs from his hand-picked local winners in 7 of the 35 regions. When the code is given his local winners, it reproduces his result exactly in every province.
+    </p>
+
+    <h2>Code and data</h2>
+    <ul>
+      <li><a href='https://github.com/smcmurtry/votingreform.ca/blob/main/simulations/mmp.py'><code>mmp.py</code></a> &mdash; the seat allocation</li>
+      <li><a href='https://github.com/smcmurtry/votingreform.ca/blob/main/simulations/data/groupings/mmp_regions_2013.csv'><code>mmp_regions_2013.csv</code></a> and <a href='https://github.com/smcmurtry/votingreform.ca/blob/main/simulations/data/groupings/mmp_regions_2023.csv'><code>mmp_regions_2023.csv</code></a> &mdash; which ridings are in each region</li>
+      <li><a href='https://github.com/smcmurtry/votingreform.ca/blob/main/simulations/data/groupings/mmp_region_seats_2013.csv'><code>mmp_region_seats_2013.csv</code></a> &mdash; Wilf Day's local and regional seat numbers</li>
+    </ul>
+
+  <p class='page-footer'>
+    The simulation code and data are <a href='https://github.com/smcmurtry/votingreform.ca/tree/main/simulations'>on GitHub</a>. Found a mistake? Please <a href='https://stephenmcmurtry.org/#contact'>get in touch</a>.
+  </p>
+  </div>
+
+  </div>
+</body>
+
+</html>

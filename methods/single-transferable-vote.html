@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>How the Single Transferable Vote simulation works | Voting Reform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The method and assumptions behind this site's Single Transferable Vote simulation of Canadian federal elections.">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+  <div id='main'>
+
+  <header id='site-header'>
+    <a id='site-title' href='../'>Voting Reform</a>
+    <nav>
+      <a href='../'>Results</a>
+      <a href='./' class='current'>How the simulations work</a>
+      <a href='../#sources'>Sources</a>
+    </nav>
+  </header>
+  <nav class='subnav'><a href='./'>Overview</a><a href='./alternative-vote.html'>Alternative Vote</a><a href='./dual-member-proportional.html'>Dual Member Proportional</a><a href='./mixed-member-proportional.html'>Mixed Member Proportional</a><a href='./single-transferable-vote.html' class='current'>Single Transferable Vote</a></nav>
+
+  <div class='prose'>
+
+    <h1>How the Single Transferable Vote simulation works</h1>
+
+    <h2>The system in brief</h2>
+    <p>
+      Under Single Transferable Vote (STV), ridings are merged into larger districts that each elect several MPs. Voters rank the candidates. A candidate who reaches a set share of the vote (the quota) is elected; votes they did not need, and the votes of eliminated candidates, move to those voters' next choices. Because each district elects several MPs, the result is roughly proportional.
+    </p>
+
+    <h2>This one is a new design</h2>
+    <p>
+      The 2015 figures on this site were supplied by Ryan Campbell as seat totals for 82 districts averaging 4.1 MPs. The district boundaries and counting rules were not recorded, so they cannot be reproduced. The simulation for 2019, 2021 and 2025 is a separate design in the same spirit. Its 2015 and later results are not strictly comparable.
+    </p>
+
+    <h2>The simulation, step by step</h2>
+    <ol>
+      <li><strong>Build the districts.</strong> Two neighbouring Dual Member Proportional districts are merged to make each STV district, so most districts combine four ridings. A district elects as many MPs as it has ridings, so the House stays its actual size.</li>
+      <li><strong>Set the quota.</strong> A candidate needs the Droop quota: the district's votes divided by one more than the number of seats, plus one vote. In a four-seat district that is just over 20%.</li>
+      <li><strong>Elect on first choices.</strong> A party's actual vote in the district is treated as first choices for its candidates. It elects one MP for every full quota.</li>
+      <li><strong>Transfer.</strong> If seats remain, the candidate with the fewest votes is eliminated and their ballots move to the parties still in the race, using the same second-choice polling as the <a href='./alternative-vote.html'>Alternative Vote simulation</a>. Anyone who now reaches the quota is elected.</li>
+      <li>Step 4 repeats until every seat is filled.</li>
+    </ol>
+
+    <h2>Assumptions</h2>
+    <ul>
+      <li><strong>Voters rank all of their party's candidates first.</strong> A party's vote stays together: it elects as many MPs as it has full quotas, and what is left over sits with its last candidate. Real STV voters often cross party lines, and individual candidates matter a great deal.</li>
+      <li><strong>Second choices come from national polling</strong>, with the same adjustments and limits as in the Alternative Vote simulation, including for Quebec.</li>
+      <li><strong>District size shapes the result.</strong> With about four MPs per district, a party needs roughly 20% of a district's vote to win a seat, which is hard for smaller parties. Larger districts would be more proportional.</li>
+      <li><strong>The districts are mechanical.</strong> They come from pairing neighbours by a fixed rule and take no account of communities or population. There are 90 districts for 2019 and 2021 and 91 for 2025; most have four MPs, with a few of one, two, three or five where the pairing leaves a remainder. Each territory is a one-seat district.</li>
+    </ul>
+
+    <h2>Check against the 2015 simulation</h2>
+    <p>
+      Run on the 2015 election (with 2019 polling for second choices), this design places 10 of 338 seats differently from Ryan Campbell's result: for example it gives the Liberals 150 seats where his gave 147. That the two are close, despite different districts and rules, suggests the overall picture does not depend much on the details.
+    </p>
+
+    <h2>Code and data</h2>
+    <ul>
+      <li><a href='https://github.com/smcmurtry/votingreform.ca/blob/main/simulations/stv.py'><code>stv.py</code></a> &mdash; the count</li>
+      <li><a href='https://github.com/smcmurtry/votingreform.ca/blob/main/simulations/preferences.py'><code>preferences.py</code></a> &mdash; how ballots transfer</li>
+      <li><a href='https://github.com/smcmurtry/votingreform.ca/blob/main/simulations/data/groupings/stv_districts_2013.csv'><code>stv_districts_2013.csv</code></a> and <a href='https://github.com/smcmurtry/votingreform.ca/blob/main/simulations/data/groupings/stv_districts_2023.csv'><code>stv_districts_2023.csv</code></a> &mdash; which ridings make up each district</li>
+    </ul>
+
+  <p class='page-footer'>
+    The simulation code and data are <a href='https://github.com/smcmurtry/votingreform.ca/tree/main/simulations'>on GitHub</a>. Found a mistake? Please <a href='https://stephenmcmurtry.org/#contact'>get in touch</a>.
+  </p>
+  </div>
+
+  </div>
+</body>
+
+</html>

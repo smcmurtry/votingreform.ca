@@ -1,8 +1,9 @@
 // var page_w = 900;
 var page_w = +d3.select('#main').style('width').slice(0,-2);
 
-// Simulated results for the alternative systems only exist for this election.
-var sim_year = '2015';
+// The 2015 results for the alternative systems were supplied by outside
+// contributors; later elections are simulated by the code in simulations/.
+var contributed_year = '2015';
 
 var elections = [
   {label: '2025', abbr: '2025'},
@@ -13,10 +14,10 @@ var elections = [
 
 var voting_systems = [
   {label: 'First Past the Post', abbr: 'FPTP'},
-  {label: 'Alternative Vote', abbr: 'IRV', dropdown_label: 'Alternative Vote (2015 simulation)'},
-  {label: 'Dual Member Proportional', abbr: 'DMP', dropdown_label: 'Dual Member Proportional (2015 simulation)'},
-  {label: 'Mixed Member Proportional', abbr: 'MMP', dropdown_label: 'Mixed Member Proportional (2015 simulation)'},
-  {label: 'Single Transferable Vote', abbr: 'STV', dropdown_label: 'Single Transferable Vote (2015 simulation)'}
+  {label: 'Alternative Vote', abbr: 'IRV'},
+  {label: 'Dual Member Proportional', abbr: 'DMP'},
+  {label: 'Mixed Member Proportional', abbr: 'MMP'},
+  {label: 'Single Transferable Vote', abbr: 'STV'}
 ];
 
 var party_labels = {
@@ -51,7 +52,7 @@ function create_dropdown(id, data_list) {
     .enter()
     .append('option')
     .attr('value', function(d, i) { return i; })
-    .html(function(d) { return d.dropdown_label || d.label; });
+    .html(function(d) { return d.label; });
 }
 
 function set_selected_row(id, data_list, abbr) {
