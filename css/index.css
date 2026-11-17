@@ -5,23 +5,64 @@ body {
   background-color: #FCFCFC;
 }
 
-#main, #nav-inner {
+#main {
   margin: 0 auto;
   width: 95%;
   max-width: 900px;
   /*min-width: 770px;*/
 }
 
-#nav {
+#site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid black;
+}
+#site-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+}
+#site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+#site-header nav a, .subnav a {
+  color: steelblue;
+  text-decoration: none;
+}
+#site-header nav a:hover, .subnav a:hover {
+  text-decoration: underline;
+}
+#site-header nav a.current, .subnav a.current {
+  color: black;
+  font-weight: bold;
+}
+.subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+}
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  padding: 10px 14px 14px;
   background-color: white;
-  /*height:150px;*/
-  opacity: 1;
-  left: 0;
-  right: 0;
-  /*box-shadow: 0px 1px 50px #5E5E5E;*/
-  position:fixed;
-  top:0px;
-  box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2)
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+.method-link {
+  margin-top: 0.6rem;
 }
 
 #svg-chart {
@@ -62,7 +103,6 @@ body {
 
 .chart {
   position: relative;
-  z-index: -1;
 }
 
 .dropdown-div option {
@@ -72,11 +112,6 @@ body {
   padding-top: 5px;
   flex: 1 1 150px;
   min-width: 0;
-}
-#nav-inner {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 12px;
 }
 .dropdown-div label {
   display: block;
@@ -194,11 +229,65 @@ select:focus {
   color: steelblue;
   font-weight: bold;
 }
-#summary-note, #sim-note {
+#summary-note {
   font-size: 0.9rem;
   color: grey;
 }
 @media (max-width: 500px) {
   #summary-table { font-size: 0.85rem; }
   #summary-table .num { padding-right: 10px; }
+}
+
+/* Methodology pages */
+.prose {
+  max-width: 720px;
+  line-height: 1.5;
+}
+.prose h2 {
+  margin-top: 2rem;
+}
+.prose li {
+  margin-bottom: 0.5rem;
+}
+.prose table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+.prose th, .prose td {
+  text-align: left;
+  padding: 6px 14px 6px 0;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+.prose thead th {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: grey;
+  border-bottom: 2px solid black;
+  vertical-align: bottom;
+}
+.prose td.num, .prose th.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.table-scroll {
+  overflow-x: auto;
+}
+.prose code {
+  font-size: 0.9em;
+  background-color: #f0f0f0;
+  padding: 1px 4px;
+  border-radius: 2px;
+}
+.note {
+  font-size: 0.9rem;
+  color: grey;
+}
+.page-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+  color: grey;
 }

@@ -1,0 +1,339 @@
+riding_number,riding_name,district,prov,seats
+10001,Avalon,NL-1,NL,4
+10002,Bonavista--Burin--Trinity,NL-1,NL,4
+10003,Coast of Bays--Central--Notre Dame,NL-2,NL,3
+10004,Labrador,NL-2,NL,3
+10005,Long Range Mountains,NL-2,NL,3
+10006,St. John's East,NL-1,NL,4
+10007,St. John's South--Mount Pearl,NL-1,NL,4
+11001,Cardigan,PE-1,PE,4
+11002,Charlottetown,PE-1,PE,4
+11003,Egmont,PE-1,PE,4
+11004,Malpeque,PE-1,PE,4
+12001,Cape Breton--Canso,NS-1,NS,4
+12002,Central Nova,NS-1,NS,4
+12003,Cumberland--Colchester,NS-2,NS,4
+12004,Dartmouth--Cole Harbour,NS-3,NS,3
+12005,Halifax,NS-3,NS,3
+12006,Halifax West,NS-3,NS,3
+12007,Kings--Hants,NS-2,NS,4
+12008,Sackville--Preston--Chezzetcook,NS-1,NS,4
+12009,South Shore--St. Margarets,NS-2,NS,4
+12010,Sydney--Victoria,NS-1,NS,4
+12011,West Nova,NS-2,NS,4
+13001,Acadie--Bathurst,NB-1,NB,4
+13002,Beauséjour,NB-2,NB,4
+13003,Fredericton,NB-3,NB,2
+13004,Fundy Royal,NB-2,NB,4
+13005,Madawaska--Restigouche,NB-1,NB,4
+13006,Miramichi--Grand Lake,NB-1,NB,4
+13007,Moncton--Riverview--Dieppe,NB-2,NB,4
+13008,New Brunswick Southwest,NB-3,NB,2
+13009,Saint John--Rothesay,NB-2,NB,4
+13010,Tobique--Mactaquac,NB-1,NB,4
+24001,Abitibi--Baie-James--Nunavik--Eeyou,QC-1,QC,4
+24002,Abitibi--Témiscamingue,QC-1,QC,4
+24003,Ahuntsic-Cartierville,QC-2,QC,4
+24004,Alfred-Pellan,QC-3,QC,4
+24005,Argenteuil--La Petite-Nation,QC-4,QC,4
+24006,Avignon--La Mitis--Matane--Matapédia,QC-5,QC,4
+24007,Beauce,QC-6,QC,4
+24008,Beauport--Limoilou,QC-7,QC,4
+24009,Bécancour--Nicolet--Saurel,QC-8,QC,4
+24010,Bellechasse--Les Etchemins--Lévis,QC-6,QC,4
+24011,Beloeil--Chambly,QC-9,QC,4
+24012,Berthier--Maskinongé,QC-8,QC,4
+24013,Thérèse-De Blainville,QC-10,QC,4
+24014,Pierre-Boucher--Les Patriotes--Verchères,QC-9,QC,4
+24015,Bourassa,QC-2,QC,4
+24016,Brome--Missisquoi,QC-11,QC,4
+24017,Brossard--Saint-Lambert,QC-12,QC,4
+24018,Rimouski-Neigette--Témiscouata--Les Basques,QC-5,QC,4
+24019,Charlesbourg--Haute-Saint-Charles,QC-7,QC,4
+24020,Beauport-Côte-de-Beaupré-Île d'Orléans-Charlevoix,QC-13,QC,4
+24021,Châteauguay--Lacolle,QC-14,QC,4
+24022,Chicoutimi--Le Fjord,QC-13,QC,4
+24023,Compton--Stanstead,QC-15,QC,4
+24024,Dorval--Lachine--LaSalle,QC-16,QC,4
+24025,Drummond,QC-11,QC,4
+24026,Gaspésie--Les Îles-de-la-Madeleine,QC-5,QC,4
+24027,Gatineau,QC-4,QC,4
+24028,Hochelaga,QC-12,QC,4
+24029,Honoré-Mercier,QC-17,QC,4
+24030,Hull--Aylmer,QC-4,QC,4
+24031,Joliette,QC-18,QC,4
+24032,Jonquière,QC-13,QC,4
+24033,La Pointe-de-l'Île,QC-17,QC,4
+24034,La Prairie,QC-19,QC,2
+24035,Lac-Saint-Jean,QC-1,QC,4
+24036,Lac-Saint-Louis,QC-14,QC,4
+24037,LaSalle--Émard--Verdun,QC-16,QC,4
+24038,Laurentides--Labelle,QC-18,QC,4
+24039,Laurier--Sainte-Marie,QC-20,QC,4
+24040,Laval--Les Îles,QC-3,QC,4
+24041,Longueuil--Charles-LeMoyne,QC-12,QC,4
+24042,Lévis--Lotbinière,QC-15,QC,4
+24043,Longueuil--Saint-Hubert,QC-9,QC,4
+24044,Louis-Hébert,QC-6,QC,4
+24045,Louis-Saint-Laurent,QC-7,QC,4
+24046,Manicouagan,QC-13,QC,4
+24047,Mégantic--L'Érable,QC-15,QC,4
+24048,Mirabel,QC-10,QC,4
+24049,Montarville,QC-9,QC,4
+24050,Montcalm,QC-17,QC,4
+24051,Montmagny--L'Islet--Kamouraska--Rivière-du-Loup,QC-5,QC,4
+24052,Mount Royal,QC-20,QC,4
+24053,Notre-Dame-de-Grâce--Westmount,QC-16,QC,4
+24054,Outremont,QC-20,QC,4
+24055,Papineau,QC-2,QC,4
+24056,Pierrefonds--Dollard,QC-14,QC,4
+24057,Pontiac,QC-18,QC,4
+24058,Portneuf--Jacques-Cartier,QC-7,QC,4
+24059,Québec,QC-6,QC,4
+24060,Repentigny,QC-18,QC,4
+24061,Richmond--Arthabaska,QC-8,QC,4
+24062,Rivière-des-Mille-Îles,QC-10,QC,4
+24063,Rivière-du-Nord,QC-10,QC,4
+24064,Rosemont--La Petite-Patrie,QC-12,QC,4
+24065,Marc-Aurèle-Fortin,QC-3,QC,4
+24066,Saint-Hyacinthe--Bagot,QC-11,QC,4
+24067,Saint-Jean,QC-19,QC,2
+24068,Saint-Laurent,QC-20,QC,4
+24069,Saint-Léonard--Saint-Michel,QC-2,QC,4
+24070,Saint-Maurice--Champlain,QC-1,QC,4
+24071,Salaberry--Suroît,QC-14,QC,4
+24072,Shefford,QC-11,QC,4
+24073,Sherbrooke,QC-15,QC,4
+24074,Vaudreuil--Soulanges,QC-4,QC,4
+24075,Terrebonne,QC-17,QC,4
+24076,Trois-Rivières,QC-8,QC,4
+24077,Ville-Marie--Le Sud-Ouest--Île-des-Soeurs,QC-16,QC,4
+24078,Vimy,QC-3,QC,4
+35001,Ajax,ON-1,ON,4
+35002,Algoma--Manitoulin--Kapuskasing,ON-2,ON,4
+35003,Aurora--Oak Ridges--Richmond Hill,ON-3,ON,4
+35004,Barrie--Innisfil,ON-4,ON,4
+35005,Barrie--Springwater--Oro-Medonte,ON-4,ON,4
+35006,Bay of Quinte,ON-5,ON,4
+35007,Beaches--East York,ON-6,ON,4
+35008,Brampton Centre,ON-7,ON,4
+35009,Brampton East,ON-7,ON,4
+35010,Brampton North,ON-7,ON,4
+35011,Brampton South,ON-8,ON,4
+35012,Brampton West,ON-8,ON,4
+35013,Brantford--Brant,ON-9,ON,4
+35014,Bruce--Grey--Owen Sound,ON-10,ON,4
+35015,Burlington,ON-11,ON,4
+35016,Cambridge,ON-12,ON,4
+35017,Chatham-Kent--Leamington,ON-13,ON,4
+35018,Davenport,ON-14,ON,4
+35019,Don Valley East,ON-6,ON,4
+35020,Don Valley North,ON-15,ON,4
+35021,Don Valley West,ON-6,ON,4
+35022,Dufferin--Caledon,ON-4,ON,4
+35023,Durham,ON-1,ON,4
+35024,Eglinton--Lawrence,ON-16,ON,4
+35025,Elgin--Middlesex--London,ON-17,ON,4
+35026,Essex,ON-13,ON,4
+35027,Etobicoke Centre,ON-16,ON,4
+35028,Etobicoke--Lakeshore,ON-14,ON,4
+35029,Etobicoke North,ON-16,ON,4
+35030,Flamborough--Glanbrook,ON-9,ON,4
+35031,Glengarry--Prescott--Russell,ON-18,ON,4
+35032,Guelph,ON-8,ON,4
+35033,Haldimand--Norfolk,ON-19,ON,5
+35034,Haliburton--Kawartha Lakes--Brock,ON-20,ON,4
+35035,Hamilton Centre,ON-21,ON,4
+35036,Hamilton East--Stoney Creek,ON-21,ON,4
+35037,Hamilton Mountain,ON-21,ON,4
+35038,Hamilton West--Ancaster--Dundas,ON-21,ON,4
+35039,Hastings--Lennox and Addington,ON-5,ON,4
+35040,Huron--Bruce,ON-10,ON,4
+35041,Kanata--Carleton,ON-22,ON,4
+35042,Kenora,ON-23,ON,4
+35043,King--Vaughan,ON-24,ON,4
+35044,Kingston and the Islands,ON-5,ON,4
+35045,Kitchener Centre,ON-12,ON,4
+35046,Kitchener--Conestoga,ON-25,ON,4
+35047,Kitchener South--Hespeler,ON-12,ON,4
+35048,Lambton--Kent--Middlesex,ON-25,ON,4
+35049,Lanark--Frontenac--Kingston,ON-18,ON,4
+35050,Leeds-Grenville-Thousand Islands and Rideau Lakes,ON-18,ON,4
+35051,London--Fanshawe,ON-17,ON,4
+35052,London North Centre,ON-17,ON,4
+35053,London West,ON-17,ON,4
+35054,Markham--Stouffville,ON-26,ON,4
+35055,Markham--Thornhill,ON-15,ON,4
+35056,Markham--Unionville,ON-26,ON,4
+35057,Milton,ON-9,ON,4
+35058,Mississauga Centre,ON-27,ON,4
+35059,Mississauga East--Cooksville,ON-27,ON,4
+35060,Mississauga--Erin Mills,ON-11,ON,4
+35061,Mississauga--Lakeshore,ON-14,ON,4
+35062,Mississauga--Malton,ON-27,ON,4
+35063,Mississauga--Streetsville,ON-27,ON,4
+35064,Nepean,ON-22,ON,4
+35065,Newmarket--Aurora,ON-3,ON,4
+35066,Niagara Centre,ON-19,ON,5
+35067,Niagara Falls,ON-19,ON,5
+35068,Niagara West,ON-19,ON,5
+35069,Nickel Belt,ON-2,ON,4
+35070,Nipissing--Timiskaming,ON-20,ON,4
+35071,Northumberland--Peterborough South,ON-5,ON,4
+35072,Oakville,ON-11,ON,4
+35073,Oakville North--Burlington,ON-11,ON,4
+35074,Oshawa,ON-1,ON,4
+35075,Ottawa Centre,ON-28,ON,4
+35076,Orléans,ON-28,ON,4
+35077,Ottawa South,ON-28,ON,4
+35078,Ottawa--Vanier,ON-28,ON,4
+35079,Ottawa West--Nepean,ON-22,ON,4
+35080,Oxford,ON-9,ON,4
+35081,Parkdale--High Park,ON-14,ON,4
+35082,Parry Sound--Muskoka,ON-10,ON,4
+35083,Perth--Wellington,ON-25,ON,4
+35084,Peterborough--Kawartha,ON-20,ON,4
+35085,Pickering--Uxbridge,ON-3,ON,4
+35086,Renfrew--Nipissing--Pembroke,ON-20,ON,4
+35087,Richmond Hill,ON-15,ON,4
+35088,Carleton,ON-22,ON,4
+35089,St. Catharines,ON-19,ON,5
+35090,Toronto--St. Paul's,ON-29,ON,4
+35091,Sarnia--Lambton,ON-25,ON,4
+35092,Sault Ste. Marie,ON-2,ON,4
+35093,Scarborough--Agincourt,ON-30,ON,4
+35094,Scarborough Centre,ON-30,ON,4
+35095,Scarborough--Guildwood,ON-26,ON,4
+35096,Scarborough North,ON-30,ON,4
+35097,Scarborough--Rouge Park,ON-26,ON,4
+35098,Scarborough Southwest,ON-30,ON,4
+35099,Simcoe--Grey,ON-4,ON,4
+35100,Simcoe North,ON-10,ON,4
+35101,Spadina--Fort York,ON-29,ON,4
+35102,Stormont--Dundas--South Glengarry,ON-18,ON,4
+35103,Sudbury,ON-2,ON,4
+35104,Thornhill,ON-24,ON,4
+35105,Thunder Bay--Rainy River,ON-23,ON,4
+35106,Thunder Bay--Superior North,ON-23,ON,4
+35107,Timmins--James Bay,ON-23,ON,4
+35108,Toronto Centre,ON-29,ON,4
+35109,Toronto--Danforth,ON-6,ON,4
+35110,University--Rosedale,ON-29,ON,4
+35111,Vaughan--Woodbridge,ON-7,ON,4
+35112,Waterloo,ON-12,ON,4
+35113,Wellington--Halton Hills,ON-8,ON,4
+35114,Whitby,ON-1,ON,4
+35115,Willowdale,ON-15,ON,4
+35116,Windsor--Tecumseh,ON-13,ON,4
+35117,Windsor West,ON-13,ON,4
+35118,York Centre,ON-24,ON,4
+35119,York--Simcoe,ON-3,ON,4
+35120,York South--Weston,ON-16,ON,4
+35121,Humber River--Black Creek,ON-24,ON,4
+46001,Brandon--Souris,MB-1,MB,4
+46002,Charleswood--St. James--Assiniboia--Headingley,MB-1,MB,4
+46003,Churchill--Keewatinook Aski,MB-2,MB,4
+46004,Dauphin--Swan River--Neepawa,MB-2,MB,4
+46005,Elmwood--Transcona,MB-3,MB,4
+46006,Kildonan--St. Paul,MB-3,MB,4
+46007,Portage--Lisgar,MB-1,MB,4
+46008,Provencher,MB-2,MB,4
+46009,Saint Boniface--Saint Vital,MB-4,MB,2
+46010,Selkirk--Interlake--Eastman,MB-2,MB,4
+46011,Winnipeg Centre,MB-3,MB,4
+46012,Winnipeg North,MB-3,MB,4
+46013,Winnipeg South,MB-4,MB,2
+46014,Winnipeg South Centre,MB-1,MB,4
+47001,Battlefords--Lloydminster,SK-1,SK,4
+47002,Cypress Hills--Grasslands,SK-2,SK,4
+47003,Desnethé--Missinippi--Churchill River,SK-1,SK,4
+47004,Carlton Trail--Eagle Creek,SK-1,SK,4
+47005,Moose Jaw--Lake Centre--Lanigan,SK-3,SK,4
+47006,Prince Albert,SK-1,SK,4
+47007,Regina--Lewvan,SK-4,SK,2
+47008,Regina--Qu'Appelle,SK-2,SK,4
+47009,Regina--Wascana,SK-4,SK,2
+47010,Saskatoon--Grasswood,SK-3,SK,4
+47011,Saskatoon--University,SK-3,SK,4
+47012,Saskatoon West,SK-3,SK,4
+47013,Souris--Moose Mountain,SK-2,SK,4
+47014,Yorkton--Melville,SK-2,SK,4
+48001,Banff--Airdrie,AB-1,AB,4
+48002,Battle River--Crowfoot,AB-2,AB,4
+48003,Bow River,AB-3,AB,4
+48004,Calgary Centre,AB-4,AB,4
+48005,Calgary Confederation,AB-4,AB,4
+48006,Calgary Forest Lawn,AB-5,AB,4
+48007,Calgary Heritage,AB-5,AB,4
+48008,Calgary Midnapore,AB-5,AB,4
+48009,Calgary Nose Hill,AB-1,AB,4
+48010,Calgary Rocky Ridge,AB-4,AB,4
+48011,Calgary Shepard,AB-5,AB,4
+48012,Calgary Signal Hill,AB-4,AB,4
+48013,Calgary Skyview,AB-1,AB,4
+48014,Edmonton Centre,AB-2,AB,4
+48015,Edmonton Griesbach,AB-6,AB,2
+48016,Edmonton Manning,AB-6,AB,2
+48017,Edmonton Mill Woods,AB-7,AB,4
+48018,Edmonton Riverbend,AB-7,AB,4
+48019,Edmonton Strathcona,AB-2,AB,4
+48020,Edmonton West,AB-8,AB,4
+48021,Edmonton--Wetaskiwin,AB-7,AB,4
+48022,Foothills,AB-3,AB,4
+48023,Fort McMurray--Cold Lake,AB-9,AB,4
+48024,Grande Prairie--Mackenzie,AB-9,AB,4
+48025,Lakeland,AB-9,AB,4
+48026,Lethbridge,AB-3,AB,4
+48027,Medicine Hat--Cardston--Warner,AB-3,AB,4
+48028,Peace River--Westlock,AB-9,AB,4
+48029,Red Deer--Mountain View,AB-1,AB,4
+48030,Red Deer--Lacombe,AB-7,AB,4
+48031,St. Albert--Edmonton,AB-8,AB,4
+48032,Sherwood Park--Fort Saskatchewan,AB-2,AB,4
+48033,Sturgeon River--Parkland,AB-8,AB,4
+48034,Yellowhead,AB-8,AB,4
+59001,Abbotsford,BC-1,BC,4
+59002,Burnaby North--Seymour,BC-2,BC,4
+59003,Burnaby South,BC-3,BC,4
+59004,Cariboo--Prince George,BC-4,BC,4
+59005,Central Okanagan--Similkameen--Nicola,BC-5,BC,4
+59006,Chilliwack--Hope,BC-5,BC,4
+59007,Cloverdale--Langley City,BC-1,BC,4
+59008,Coquitlam--Port Coquitlam,BC-2,BC,4
+59009,Courtenay--Alberni,BC-6,BC,4
+59010,Cowichan--Malahat--Langford,BC-7,BC,4
+59011,Delta,BC-8,BC,4
+59012,Fleetwood--Port Kells,BC-1,BC,4
+59013,Kamloops--Thompson--Cariboo,BC-4,BC,4
+59014,Kelowna--Lake Country,BC-9,BC,4
+59015,Kootenay--Columbia,BC-9,BC,4
+59016,Langley--Aldergrove,BC-1,BC,4
+59017,Mission--Matsqui--Fraser Canyon,BC-5,BC,4
+59018,Nanaimo--Ladysmith,BC-6,BC,4
+59019,New Westminster--Burnaby,BC-3,BC,4
+59020,North Okanagan--Shuswap,BC-9,BC,4
+59021,North Vancouver,BC-2,BC,4
+59022,Pitt Meadows--Maple Ridge,BC-5,BC,4
+59023,Port Moody--Coquitlam,BC-2,BC,4
+59024,Prince George--Peace River--Northern Rockies,BC-4,BC,4
+59025,Richmond Centre,BC-6,BC,4
+59026,Esquimalt--Saanich--Sooke,BC-7,BC,4
+59027,Saanich--Gulf Islands,BC-7,BC,4
+59028,Skeena--Bulkley Valley,BC-4,BC,4
+59029,South Okanagan--West Kootenay,BC-9,BC,4
+59030,South Surrey--White Rock,BC-8,BC,4
+59031,Steveston--Richmond East,BC-6,BC,4
+59032,Surrey Centre,BC-8,BC,4
+59033,Surrey--Newton,BC-8,BC,4
+59034,Vancouver Centre,BC-10,BC,2
+59035,Vancouver East,BC-10,BC,2
+59036,Vancouver Granville,BC-11,BC,4
+59037,North Island--Powell River,BC-11,BC,4
+59038,Vancouver Kingsway,BC-3,BC,4
+59039,Vancouver Quadra,BC-11,BC,4
+59040,Vancouver South,BC-3,BC,4
+59041,Victoria,BC-7,BC,4
+59042,West Vancouver--Sunshine Coast--Sea to Sky Country,BC-11,BC,4
+60001,Yukon,YT-1,YT,1
+61001,Northwest Territories,NT-1,NT,1
+62001,Nunavut,NU-1,NU,1

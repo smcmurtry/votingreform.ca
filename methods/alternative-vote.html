@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>How the Alternative Vote simulation works | Voting Reform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The method and assumptions behind this site's Alternative Vote (ranked ballot) simulation of Canadian federal elections.">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+  <div id='main'>
+
+  <header id='site-header'>
+    <a id='site-title' href='../'>Voting Reform</a>
+    <nav>
+      <a href='../'>Results</a>
+      <a href='./' class='current'>How the simulations work</a>
+      <a href='../#sources'>Sources</a>
+    </nav>
+  </header>
+  <nav class='subnav'><a href='./'>Overview</a><a href='./alternative-vote.html' class='current'>Alternative Vote</a><a href='./dual-member-proportional.html'>Dual Member Proportional</a><a href='./mixed-member-proportional.html'>Mixed Member Proportional</a><a href='./single-transferable-vote.html'>Single Transferable Vote</a></nav>
+
+  <div class='prose'>
+
+    <h1>How the Alternative Vote simulation works</h1>
+
+    <h2>The system in brief</h2>
+    <p>
+      Under Alternative Vote (also called instant runoff or a ranked ballot), ridings stay exactly as they are and each still elects one MP. Voters rank the candidates. If no candidate is the first choice of more than half the voters, the last-placed candidate is eliminated and their ballots move to those voters' next choices. This repeats until someone has a majority.
+    </p>
+
+    <h2>The simulation, step by step</h2>
+    <p>The method follows the one &Eacute;ric Grenier used for the 2015 figures on this site.</p>
+    <ol>
+      <li>In each riding, every candidate's actual votes are treated as first choices.</li>
+      <li>If the leading candidate has more than half of the ballots still in play, they win.</li>
+      <li>Otherwise the candidate with the fewest ballots is eliminated. Their ballots are shared among the candidates still in the race, in proportion to the second choices of that party's supporters in a poll taken during the campaign.</li>
+      <li>Steps 2 and 3 repeat until someone has a majority.</li>
+    </ol>
+
+    <h2>Assumptions</h2>
+    <ul>
+      <li><strong>A party's supporters have the same second choices everywhere.</strong> The polls are national. &Eacute;ric Grenier's 2015 simulation used polling broken down by region, which was not available for later elections.</li>
+      <li><strong>The Bloc Qu&eacute;b&eacute;cois adjustment.</strong> The polls report, say, that 4% of all Liberal voters would pick the Bloc second &mdash; but only Quebec voters can. The simulation therefore concentrates that share on Quebec: it is divided by the fraction of the party's national vote that was cast in Quebec, and set to zero elsewhere. Checked against the one poll that reported Quebec separately (2019), this gives figures within a few points of the published ones.</li>
+      <li><strong>Voters with no second choice drop out.</strong> People who told the pollster they were undecided about a second choice, or had none, are assumed not to rank anyone else. Their ballot is set aside when their first choice is eliminated.</li>
+      <li><strong>If a voter's second choice is already out, they move to another party still in the race</strong>, in proportion to the second-choice shares of the parties that remain. The polls ask only about second choices, so this stands in for third and later choices.</li>
+      <li><strong>Smaller parties and independents share one pattern.</strong> Their supporters all use the poll's figures for &ldquo;other&rdquo; parties. This probably undercounts transfers to a well-known independent.</li>
+    </ul>
+
+    <h2>The second-choice polling</h2>
+    <p>
+      All three tables come from <a href='https://innovativeresearch.ca/'>Innovative Research Group</a> surveys taken during each campaign, which asked decided voters &ldquo;And which party would be your second choice?&rdquo;. Each row shows the second choices of one party's supporters.
+    </p>
+    <h3>2025</h3>
+    <div class='table-scroll'>
+    <table>
+      <thead><tr><th>First choice</th><th class='num'>Liberal</th><th class='num'>Conservative</th><th class='num'>NDP</th><th class='num'>Bloc Qu&eacute;b&eacute;cois</th><th class='num'>Green</th><th class='num'>Other</th><th class='num'>No second choice</th></tr></thead>
+      <tbody>
+        <tr><th scope='row'>Conservative</th><td class='num'>16%</td><td class='num'>&ndash;</td><td class='num'>9%</td><td class='num'>2%</td><td class='num'>7%</td><td class='num'>11%</td><td class='num'>56%</td></tr>
+        <tr><th scope='row'>Liberal</th><td class='num'>&ndash;</td><td class='num'>16%</td><td class='num'>38%</td><td class='num'>7%</td><td class='num'>8%</td><td class='num'>2%</td><td class='num'>29%</td></tr>
+        <tr><th scope='row'>NDP</th><td class='num'>35%</td><td class='num'>15%</td><td class='num'>&ndash;</td><td class='num'>5%</td><td class='num'>18%</td><td class='num'>4%</td><td class='num'>22%</td></tr>
+        <tr><th scope='row'>Bloc Qu&eacute;b&eacute;cois</th><td class='num'>14%</td><td class='num'>20%</td><td class='num'>9%</td><td class='num'>&ndash;</td><td class='num'>12%</td><td class='num'>7%</td><td class='num'>37%</td></tr>
+        <tr><th scope='row'>Green</th><td class='num'>19%</td><td class='num'>14%</td><td class='num'>21%</td><td class='num'>0%</td><td class='num'>&ndash;</td><td class='num'>6%</td><td class='num'>41%</td></tr>
+        <tr><th scope='row'>Other</th><td class='num'>4%</td><td class='num'>33%</td><td class='num'>16%</td><td class='num'>2%</td><td class='num'>10%</td><td class='num'>9%</td><td class='num'>27%</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>2021</h3>
+    <div class='table-scroll'>
+    <table>
+      <thead><tr><th>First choice</th><th class='num'>Liberal</th><th class='num'>Conservative</th><th class='num'>NDP</th><th class='num'>Bloc Qu&eacute;b&eacute;cois</th><th class='num'>Green</th><th class='num'>Other</th><th class='num'>No second choice</th></tr></thead>
+      <tbody>
+        <tr><th scope='row'>Conservative</th><td class='num'>13%</td><td class='num'>&ndash;</td><td class='num'>18%</td><td class='num'>5%</td><td class='num'>5%</td><td class='num'>19%</td><td class='num'>39%</td></tr>
+        <tr><th scope='row'>Liberal</th><td class='num'>&ndash;</td><td class='num'>14%</td><td class='num'>38%</td><td class='num'>5%</td><td class='num'>7%</td><td class='num'>4%</td><td class='num'>33%</td></tr>
+        <tr><th scope='row'>NDP</th><td class='num'>34%</td><td class='num'>14%</td><td class='num'>&ndash;</td><td class='num'>3%</td><td class='num'>17%</td><td class='num'>3%</td><td class='num'>30%</td></tr>
+        <tr><th scope='row'>Bloc Qu&eacute;b&eacute;cois</th><td class='num'>16%</td><td class='num'>23%</td><td class='num'>10%</td><td class='num'>&ndash;</td><td class='num'>4%</td><td class='num'>3%</td><td class='num'>45%</td></tr>
+        <tr><th scope='row'>Green</th><td class='num'>14%</td><td class='num'>4%</td><td class='num'>21%</td><td class='num'>6%</td><td class='num'>&ndash;</td><td class='num'>8%</td><td class='num'>47%</td></tr>
+        <tr><th scope='row'>Other</th><td class='num'>4%</td><td class='num'>33%</td><td class='num'>16%</td><td class='num'>2%</td><td class='num'>10%</td><td class='num'>9%</td><td class='num'>27%</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>2019</h3>
+    <div class='table-scroll'>
+    <table>
+      <thead><tr><th>First choice</th><th class='num'>Liberal</th><th class='num'>Conservative</th><th class='num'>NDP</th><th class='num'>Bloc Qu&eacute;b&eacute;cois</th><th class='num'>Green</th><th class='num'>Other</th><th class='num'>No second choice</th></tr></thead>
+      <tbody>
+        <tr><th scope='row'>Conservative</th><td class='num'>13%</td><td class='num'>&ndash;</td><td class='num'>19%</td><td class='num'>2%</td><td class='num'>10%</td><td class='num'>15%</td><td class='num'>40%</td></tr>
+        <tr><th scope='row'>Liberal</th><td class='num'>&ndash;</td><td class='num'>13%</td><td class='num'>42%</td><td class='num'>4%</td><td class='num'>15%</td><td class='num'>2%</td><td class='num'>25%</td></tr>
+        <tr><th scope='row'>NDP</th><td class='num'>34%</td><td class='num'>13%</td><td class='num'>&ndash;</td><td class='num'>3%</td><td class='num'>30%</td><td class='num'>3%</td><td class='num'>18%</td></tr>
+        <tr><th scope='row'>Bloc Qu&eacute;b&eacute;cois</th><td class='num'>13%</td><td class='num'>21%</td><td class='num'>28%</td><td class='num'>&ndash;</td><td class='num'>13%</td><td class='num'>4%</td><td class='num'>20%</td></tr>
+        <tr><th scope='row'>Green</th><td class='num'>20%</td><td class='num'>10%</td><td class='num'>30%</td><td class='num'>6%</td><td class='num'>&ndash;</td><td class='num'>11%</td><td class='num'>23%</td></tr>
+        <tr><th scope='row'>Other</th><td class='num'>8%</td><td class='num'>30%</td><td class='num'>12%</td><td class='num'>4%</td><td class='num'>7%</td><td class='num'>8%</td><td class='num'>31%</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p class='note'>
+      &ldquo;No second choice&rdquo; combines undecided and would-not-vote. For 2019 the People's Party and other parties are combined as &ldquo;Other&rdquo;. The 2025 poll did not report second choices for supporters of smaller parties (too few respondents), so the 2021 row is reused. Rows may not add to exactly 100 because of rounding.
+    </p>
+
+    <h2>Check against the 2015 simulation</h2>
+    <p>
+      This is the one system where a like-for-like check is not possible: the regional polling used in 2015 was not published. Run on the 2015 election with 2019 polling, the code gives the Liberals 196 seats, where the 2015 simulation gave them 224. Both show the same pattern &mdash; Alternative Vote rewarding the party that is most voters' second choice &mdash; but the size of the effect depends heavily on the polling used, and Quebec is where the two differ most.
+    </p>
+
+    <h2>Code and data</h2>
+    <ul>
+      <li><a href='https://github.com/smcmurtry/votingreform.ca/blob/main/simulations/av.py'><code>av.py</code></a> &mdash; the riding-by-riding count</li>
+      <li><a href='https://github.com/smcmurtry/votingreform.ca/blob/main/simulations/preferences.py'><code>preferences.py</code></a> &mdash; how ballots transfer</li>
+      <li><a href='https://github.com/smcmurtry/votingreform.ca/blob/main/simulations/data/second_choice.csv'><code>second_choice.csv</code></a> &mdash; the polling figures</li>
+    </ul>
+
+  <p class='page-footer'>
+    The simulation code and data are <a href='https://github.com/smcmurtry/votingreform.ca/tree/main/simulations'>on GitHub</a>. Found a mistake? Please <a href='https://stephenmcmurtry.org/#contact'>get in touch</a>.
+  </p>
+  </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>How the simulations work | Voting Reform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How this site simulates Canadian federal elections under Alternative Vote, Dual Member Proportional, Mixed Member Proportional and Single Transferable Vote.">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+  <div id='main'>
+
+  <header id='site-header'>
+    <a id='site-title' href='../'>Voting Reform</a>
+    <nav>
+      <a href='../'>Results</a>
+      <a href='./' class='current'>How the simulations work</a>
+      <a href='../#sources'>Sources</a>
+    </nav>
+  </header>
+  <nav class='subnav'><a href='./' class='current'>Overview</a><a href='./alternative-vote.html'>Alternative Vote</a><a href='./dual-member-proportional.html'>Dual Member Proportional</a><a href='./mixed-member-proportional.html'>Mixed Member Proportional</a><a href='./single-transferable-vote.html'>Single Transferable Vote</a></nav>
+
+  <div class='prose'>
+
+    <h1>How the simulations work</h1>
+
+    <p>
+      This site shows two kinds of numbers. The First Past the Post results are the actual results of each election. The results under the four other voting systems are <strong>simulations</strong>: they take the votes that were actually cast and count them again under different rules.
+    </p>
+    <p>
+      A simulation is not a prediction. It answers a narrow question &mdash; <em>what would these same votes have produced under different rules?</em> &mdash; and it rests on assumptions, which these pages set out.
+    </p>
+
+    <h2>Where the numbers come from</h2>
+    <ul>
+      <li><strong>2015.</strong> The simulations were supplied by four contributors when this site was first built: &Eacute;ric Grenier (Alternative Vote), Rhys Goldstein (Dual Member Proportional), Wilf Day (Mixed Member Proportional) and Ryan Campbell (Single Transferable Vote). Their numbers are shown unchanged.</li>
+      <li><strong>2019, 2021 and 2025.</strong> The simulations were run for this site with <a href='https://github.com/smcmurtry/votingreform.ca/tree/main/simulations'>Python code that is public on GitHub</a>. The code was written to follow each contributor's 2015 method as closely as it could be reconstructed, and was then checked by running it on the 2015 election and comparing the result with theirs (see below).</li>
+    </ul>
+
+    <h2>The four simulations</h2>
+    <ul>
+      <li><a href='./alternative-vote.html'>Alternative Vote</a> &mdash; the same ridings, with ranked ballots. Uses polling on voters' second choices.</li>
+      <li><a href='./dual-member-proportional.html'>Dual Member Proportional</a> &mdash; ridings merged in pairs, two MPs each, with the second seats used to make each province's result proportional.</li>
+      <li><a href='./mixed-member-proportional.html'>Mixed Member Proportional</a> &mdash; fewer, larger ridings plus regional MPs who make each region's result proportional.</li>
+      <li><a href='./single-transferable-vote.html'>Single Transferable Vote</a> &mdash; ridings merged into districts of about four MPs, with ranked ballots.</li>
+    </ul>
+
+    <h2>Assumptions shared by every simulation</h2>
+    <ol>
+      <li><strong>Everyone votes the way they actually voted.</strong> This is the biggest limitation. Under a different system some people would vote differently (there is less reason to vote strategically), more people might vote, parties would campaign differently, and new parties might form. None of that is modelled.</li>
+      <li><strong>The same candidates and parties run.</strong> Where ridings are merged into a bigger district, a party's vote in the district is the sum of its votes in the ridings that make it up.</li>
+      <li><strong>Second choices come from national polls.</strong> The two ranked-ballot systems need to know where a voter's ballot goes if their first choice is eliminated. That comes from a published poll of each party's supporters, applied the same way in every riding. Local differences are missed. Quebec is the least certain: the polls are national, so the Bloc Qu&eacute;b&eacute;cois figures have to be adjusted to apply to Quebec voters only.</li>
+      <li><strong>Smaller parties are counted separately but shown as &ldquo;Other&rdquo;.</strong> The charts group every party outside the main five as &ldquo;Other&rdquo;, but the simulations treat each as its own party. In 2021, for example, the People's Party crosses the threshold in several provinces and wins 15 seats under Dual Member Proportional and 14 under Mixed Member Proportional.</li>
+      <li><strong>Independents stand alone.</strong> An independent can win a seat as an individual candidate, but takes no part in the sharing-out of proportional seats.</li>
+      <li><strong>Two of the designs change the size of the House.</strong> As in the 2015 simulations, the Mixed Member Proportional design gives each territory a second MP, and the Dual Member Proportional design gives two MPs to every district, including a few made of a single remote riding. Both therefore elect a few more MPs than the real House of Commons.</li>
+    </ol>
+
+    <h2>The 2025 ridings</h2>
+    <p>
+      The 2015, 2019 and 2021 elections were fought on the same 338 ridings, so the contributors' 2015 groupings of ridings (regions for Mixed Member Proportional, pairs for Dual Member Proportional) are reused as they are. The 2025 election used 343 redrawn ridings, so the groupings were rebuilt from <a href='https://ftp.maps.canada.ca/pub/elections_elections/Electoral-districts_Circonscription-electorale/'>Elections Canada's boundary files</a>:
+    </p>
+    <ul>
+      <li>each 2025 riding joins the Mixed Member Proportional region of the older riding that contains its centre;</li>
+      <li>neighbouring 2025 ridings are paired by a fixed rule to make Dual Member Proportional districts;</li>
+      <li>Single Transferable Vote districts are made the same way for both sets of boundaries, by merging neighbouring pairs.</li>
+    </ul>
+    <p>The resulting lists of ridings are <a href='https://github.com/smcmurtry/votingreform.ca/tree/main/simulations/data/groupings'>published with the code</a>.</p>
+
+    <h2>How well does the code reproduce the 2015 simulations?</h2>
+    <p>
+      Running the code on the 2015 election and comparing it, province by province, with the contributors' published 2015 results gives:
+    </p>
+    <div class='table-scroll'>
+    <table>
+      <thead><tr><th>System</th><th class='num'>Seats that differ</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><th scope='row'>Dual Member Proportional</th><td class='num'>2 of 342</td><td>163 of 171 districts come out identical. The rest turn on tie-breaking details of the original simulator that are not documented.</td></tr>
+        <tr><th scope='row'>Mixed Member Proportional</th><td class='num'>4 of 341</td><td>The original chose the winners of the enlarged local ridings by hand; the code uses a fixed rule. Given the original's local winners, the code reproduces its result exactly.</td></tr>
+        <tr><th scope='row'>Single Transferable Vote</th><td class='num'>10 of 338</td><td>Not a reconstruction: the original districts and counting rules were not recorded, so this is a separate design.</td></tr>
+        <tr><th scope='row'>Alternative Vote</th><td class='num'>28 of 338</td><td>Not a like-for-like test. The regional second-choice polling used in 2015 was never published, so this run borrows 2019 polling. Most of the gap is in Quebec and Ontario.</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class='note'>&ldquo;Seats that differ&rdquo; counts, across all provinces, the seats that go to a different party than in the published 2015 simulation. Anyone can rerun the comparison with <code>python3 simulations/run.py --validate</code>.</p>
+
+    <h2>Results at a glance</h2>
+    <p>Seats won by each party in Canada as a whole.</p>
+    <h3>2025</h3>
+    <div class='table-scroll'>
+    <table>
+      <thead><tr><th></th><th class='num'>Liberal</th><th class='num'>Conservative</th><th class='num'>NDP</th><th class='num'>Bloc Qu&eacute;b&eacute;cois</th><th class='num'>Green</th><th class='num'>Other</th><th class='num'>Total MPs</th></tr></thead>
+      <tbody>
+        <tr><th scope='row'>Share of the vote</th><td class='num'>43.8%</td><td class='num'>41.3%</td><td class='num'>6.3%</td><td class='num'>6.3%</td><td class='num'>1.2%</td><td class='num'>1.1%</td><td class='num'></td></tr>
+        <tr><th scope='row'>First Past the Post (actual result)</th><td class='num'>169</td><td class='num'>144</td><td class='num'>7</td><td class='num'>22</td><td class='num'>1</td><td class='num'>0</td><td class='num'>343</td></tr>
+        <tr><th scope='row'>Alternative Vote</th><td class='num'>171</td><td class='num'>138</td><td class='num'>7</td><td class='num'>26</td><td class='num'>1</td><td class='num'>0</td><td class='num'>343</td></tr>
+        <tr><th scope='row'>Dual Member Proportional</th><td class='num'>154</td><td class='num'>146</td><td class='num'>22</td><td class='num'>22</td><td class='num'>0</td><td class='num'>0</td><td class='num'>344</td></tr>
+        <tr><th scope='row'>Mixed Member Proportional</th><td class='num'>154</td><td class='num'>147</td><td class='num'>24</td><td class='num'>20</td><td class='num'>1</td><td class='num'>0</td><td class='num'>346</td></tr>
+        <tr><th scope='row'>Single Transferable Vote</th><td class='num'>158</td><td class='num'>154</td><td class='num'>6</td><td class='num'>25</td><td class='num'>0</td><td class='num'>0</td><td class='num'>343</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>2021</h3>
+    <div class='table-scroll'>
+    <table>
+      <thead><tr><th></th><th class='num'>Liberal</th><th class='num'>Conservative</th><th class='num'>NDP</th><th class='num'>Bloc Qu&eacute;b&eacute;cois</th><th class='num'>Green</th><th class='num'>Other</th><th class='num'>Total MPs</th></tr></thead>
+      <tbody>
+        <tr><th scope='row'>Share of the vote</th><td class='num'>32.6%</td><td class='num'>33.7%</td><td class='num'>17.8%</td><td class='num'>7.6%</td><td class='num'>2.3%</td><td class='num'>5.8%</td><td class='num'></td></tr>
+        <tr><th scope='row'>First Past the Post (actual result)</th><td class='num'>160</td><td class='num'>119</td><td class='num'>25</td><td class='num'>32</td><td class='num'>2</td><td class='num'>0</td><td class='num'>338</td></tr>
+        <tr><th scope='row'>Alternative Vote</th><td class='num'>150</td><td class='num'>115</td><td class='num'>32</td><td class='num'>39</td><td class='num'>2</td><td class='num'>0</td><td class='num'>338</td></tr>
+        <tr><th scope='row'>Dual Member Proportional</th><td class='num'>116</td><td class='num'>117</td><td class='num'>63</td><td class='num'>27</td><td class='num'>4</td><td class='num'>15</td><td class='num'>342</td></tr>
+        <tr><th scope='row'>Mixed Member Proportional</th><td class='num'>119</td><td class='num'>116</td><td class='num'>62</td><td class='num'>26</td><td class='num'>4</td><td class='num'>14</td><td class='num'>341</td></tr>
+        <tr><th scope='row'>Single Transferable Vote</th><td class='num'>119</td><td class='num'>122</td><td class='num'>67</td><td class='num'>30</td><td class='num'>0</td><td class='num'>0</td><td class='num'>338</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>2019</h3>
+    <div class='table-scroll'>
+    <table>
+      <thead><tr><th></th><th class='num'>Liberal</th><th class='num'>Conservative</th><th class='num'>NDP</th><th class='num'>Bloc Qu&eacute;b&eacute;cois</th><th class='num'>Green</th><th class='num'>Other</th><th class='num'>Total MPs</th></tr></thead>
+      <tbody>
+        <tr><th scope='row'>Share of the vote</th><td class='num'>33.1%</td><td class='num'>34.3%</td><td class='num'>16.0%</td><td class='num'>7.6%</td><td class='num'>6.5%</td><td class='num'>2.4%</td><td class='num'></td></tr>
+        <tr><th scope='row'>First Past the Post (actual result)</th><td class='num'>157</td><td class='num'>121</td><td class='num'>24</td><td class='num'>32</td><td class='num'>3</td><td class='num'>1</td><td class='num'>338</td></tr>
+        <tr><th scope='row'>Alternative Vote</th><td class='num'>161</td><td class='num'>105</td><td class='num'>30</td><td class='num'>39</td><td class='num'>3</td><td class='num'>0</td><td class='num'>338</td></tr>
+        <tr><th scope='row'>Dual Member Proportional</th><td class='num'>119</td><td class='num'>119</td><td class='num'>57</td><td class='num'>26</td><td class='num'>21</td><td class='num'>0</td><td class='num'>342</td></tr>
+        <tr><th scope='row'>Mixed Member Proportional</th><td class='num'>121</td><td class='num'>117</td><td class='num'>57</td><td class='num'>24</td><td class='num'>21</td><td class='num'>1</td><td class='num'>341</td></tr>
+        <tr><th scope='row'>Single Transferable Vote</th><td class='num'>125</td><td class='num'>117</td><td class='num'>60</td><td class='num'>30</td><td class='num'>6</td><td class='num'>0</td><td class='num'>338</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>2015 <span class="note">(simulations supplied by contributors)</span></h3>
+    <div class='table-scroll'>
+    <table>
+      <thead><tr><th></th><th class='num'>Liberal</th><th class='num'>Conservative</th><th class='num'>NDP</th><th class='num'>Bloc Qu&eacute;b&eacute;cois</th><th class='num'>Green</th><th class='num'>Other</th><th class='num'>Total MPs</th></tr></thead>
+      <tbody>
+        <tr><th scope='row'>Share of the vote</th><td class='num'>39.5%</td><td class='num'>31.9%</td><td class='num'>19.7%</td><td class='num'>4.7%</td><td class='num'>3.4%</td><td class='num'>0.8%</td><td class='num'></td></tr>
+        <tr><th scope='row'>First Past the Post (actual result)</th><td class='num'>184</td><td class='num'>99</td><td class='num'>44</td><td class='num'>10</td><td class='num'>1</td><td class='num'>0</td><td class='num'>338</td></tr>
+        <tr><th scope='row'>Alternative Vote</th><td class='num'>224</td><td class='num'>61</td><td class='num'>50</td><td class='num'>2</td><td class='num'>1</td><td class='num'>0</td><td class='num'>338</td></tr>
+        <tr><th scope='row'>Dual Member Proportional</th><td class='num'>140</td><td class='num'>111</td><td class='num'>72</td><td class='num'>15</td><td class='num'>4</td><td class='num'>0</td><td class='num'>342</td></tr>
+        <tr><th scope='row'>Mixed Member Proportional</th><td class='num'>142</td><td class='num'>106</td><td class='num'>74</td><td class='num'>15</td><td class='num'>4</td><td class='num'>0</td><td class='num'>341</td></tr>
+        <tr><th scope='row'>Single Transferable Vote</th><td class='num'>147</td><td class='num'>111</td><td class='num'>63</td><td class='num'>15</td><td class='num'>2</td><td class='num'>0</td><td class='num'>338</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+  <p class='page-footer'>
+    The simulation code and data are <a href='https://github.com/smcmurtry/votingreform.ca/tree/main/simulations'>on GitHub</a>. Found a mistake? Please <a href='https://stephenmcmurtry.org/#contact'>get in touch</a>.
+  </p>
+  </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>How the Dual Member Proportional simulation works | Voting Reform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The method and assumptions behind this site's Dual Member Proportional simulation of Canadian federal elections.">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+  <div id='main'>
+
+  <header id='site-header'>
+    <a id='site-title' href='../'>Voting Reform</a>
+    <nav>
+      <a href='../'>Results</a>
+      <a href='./' class='current'>How the simulations work</a>
+      <a href='../#sources'>Sources</a>
+    </nav>
+  </header>
+  <nav class='subnav'><a href='./'>Overview</a><a href='./alternative-vote.html'>Alternative Vote</a><a href='./dual-member-proportional.html' class='current'>Dual Member Proportional</a><a href='./mixed-member-proportional.html'>Mixed Member Proportional</a><a href='./single-transferable-vote.html'>Single Transferable Vote</a></nav>
+
+  <div class='prose'>
+
+    <h1>How the Dual Member Proportional simulation works</h1>
+
+    <h2>The system in brief</h2>
+    <p>
+      Dual Member Proportional (DMP) was designed by Sean Graham in 2013. Ridings are merged in pairs, and each merged district elects two MPs. The first seat goes to the candidate with the most votes, as now. The second seats are handed out so that each party's total across the province matches its share of the province's vote. Every MP represents a district, and there are no party lists.
+    </p>
+
+    <h2>The simulation, step by step</h2>
+    <p>The method follows the simulation Rhys Goldstein ran for the 2015 figures on this site.</p>
+    <ol>
+      <li><strong>Merge the ridings.</strong> Ridings are combined, mostly in pairs, into two-seat districts. A party's vote in a district is the sum of its votes in those ridings.</li>
+      <li><strong>Share out each province's seats.</strong> A province has two seats per district. They are divided among the parties in proportion to the province-wide vote, by largest remainder. A party needs 3% of the province's vote to take part.</li>
+      <li><strong>Award the first seats.</strong> In each district the party with the most votes wins the first seat.</li>
+      <li><strong>Place the second seats.</strong> Each party still owed seats takes them in the districts where its share of the vote is highest. A party that already holds a district's first seat competes for the second with half its share (representing its second candidate). When two parties want the same second seat, the one with the higher share gets it, and the other moves to its next-best district.</li>
+    </ol>
+
+    <h2>Assumptions</h2>
+    <ul>
+      <li><strong>The 3% threshold is inferred.</strong> It was not written down with the 2015 results, but they imply it: the Greens win a seat in Manitoba with 3.2% of the vote and none in Ontario with 2.8%.</li>
+      <li><strong>A party keeps any first seats beyond its proportional share.</strong> The remaining seats are then shared among the other parties.</li>
+      <li><strong>An independent wins a seat by placing first or second in a district</strong>, and takes no part in the proportional sharing.</li>
+      <li><strong>Slightly more MPs.</strong> Every district elects two MPs, including the few made of one remote riding (Labrador and the three territories) or of three ridings. The 2015, 2019 and 2021 simulations have 342 MPs instead of 338; 2025 has 344 instead of 343.</li>
+    </ul>
+
+    <h2>The districts</h2>
+    <p>
+      For 2019 and 2021 the districts are the 171 that Rhys Goldstein drew for 2015. For the redrawn 2025 ridings, 172 new districts were made by a fixed rule: within each province, neighbouring ridings are paired, starting with the ridings that have the fewest unpaired neighbours and pairing each with the nearest one. Where a province has an odd number of ridings, the last one joins a neighbouring pair. Labrador and the territories stay on their own, as in the original.
+    </p>
+    <p>
+      These pairings are mechanical and take no account of communities, municipal boundaries or population. A real boundary commission would draw them differently.
+    </p>
+
+    <h2>Check against the 2015 simulation</h2>
+    <p>
+      Run on the 2015 election, the code gives the same two MPs as Rhys Goldstein's simulation in 163 of 171 districts, and the same seat totals in every province except Alberta and Quebec, where one seat differs. The remaining differences come down to details of his simulator that are not documented.
+    </p>
+
+    <h2>Code and data</h2>
+    <ul>
+      <li><a href='https://github.com/smcmurtry/votingreform.ca/blob/main/simulations/dmp.py'><code>dmp.py</code></a> &mdash; the seat allocation</li>
+      <li><a href='https://github.com/smcmurtry/votingreform.ca/blob/main/simulations/data/groupings/dmp_districts_2013.csv'><code>dmp_districts_2013.csv</code></a> and <a href='https://github.com/smcmurtry/votingreform.ca/blob/main/simulations/data/groupings/dmp_districts_2023.csv'><code>dmp_districts_2023.csv</code></a> &mdash; which ridings make up each district</li>
+      <li><a href='https://github.com/smcmurtry/votingreform.ca/blob/main/simulations/groupings.py'><code>groupings.py</code></a> &mdash; the pairing rule for the 2025 ridings</li>
+    </ul>
+
+  <p class='page-footer'>
+    The simulation code and data are <a href='https://github.com/smcmurtry/votingreform.ca/tree/main/simulations'>on GitHub</a>. Found a mistake? Please <a href='https://stephenmcmurtry.org/#contact'>get in touch</a>.
+  </p>
+  </div>
+
+  </div>
+</body>
+
+</html>

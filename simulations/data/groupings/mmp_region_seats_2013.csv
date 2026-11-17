@@ -1,0 +1,36 @@
+region,prov,local_seats,regional_seats,assumed_local_Liberal,assumed_local_Conservative,assumed_local_NDP,assumed_local_Bloc,assumed_local_Green
+Newfoundland & Labrador,NL,5,2,5,0,0,0,0
+Prince Edward Island,PE,2,2,2,0,0,0,0
+Nova Scotia,NS,7,4,7,0,0,0,0
+New Brunswick,NB,6,4,6,0,0,0,0
+Montreal-est,QC,7,5,4,0,2,1,0
+Montreal—West,QC,4,2,4,0,0,0,0
+Laval—Laurentides—Lanaudière,QC,8,5,4,0,0,4,0
+Longueuil—Montérégie-centre—Suroît,QC,7,5,4,0,2,1,0
+Outaouais—Abitibi-Témiscamingue—Nord,QC,4,2,2,0,2,0,0
+Estrie—Mauricie—Centre-du-Q—Montérégie-est,QC,7,4,3,1,2,1,0
+Chaudière-Appalaches—Bas-Saint-Laurent—Gaspésie,QC,5,2,2,2,1,0,0
+Quebec City—Saguenay-Lac-Saint-Jean—Côte-Nord,QC,7,4,2,3,1,1,0
+Ottawa—Cornwall,ON,6,4,5,1,0,0,0
+Mid-Eastern Ontario (Kingston—Peterborough),ON,6,3,4,2,0,0,0
+York—Durham,ON,9,6,6,3,0,0,0
+Central Toronto—Scarborough,ON,7,5,7,0,0,0,0
+North York—Etobicoke,ON,8,5,8,0,0,0,0
+Peel—Halton,ON,9,6,7,2,0,0,0
+South Central (Hamilton—Niagara—Brant),ON,7,5,3,3,1,0,0
+West Central Ontario (Waterloo—Barrie—Owen Sound),ON,8,5,4,4,0,0,0
+Southwestern Ontario (London—Windsor),ON,8,5,1,4,3,0,0
+Northern Ontario,ON,6,3,4,0,2,0,0
+Winnipeg,MB,5,3,4,0,1,0,0
+Manitoba,MB,4,2,0,3,1,0,0
+Saskatchewan,SK,9,5,1,6,2,0,0
+Metropolitan Calgary,AB,7,4,1,6,0,0,0
+South and North Alberta,AB,7,5,0,7,0,0,0
+Metropolitan Edmonton,AB,7,4,1,5,1,0,0
+Vancouver—Burnaby—North Shore—Maple Ridge,BC,9,5,6,0,3,0,0
+Surrey—Richmond—Abbotsford—Langley,BC,7,5,4,3,0,0,0
+BC Interior and North,BC,6,3,1,3,2,0,0
+Vancouver Island,BC,5,2,0,0,4,0,1
+Yukon,YT,1,1,1,0,0,0,0
+Northwest Territories,NT,1,1,1,0,0,0,0
+Nunavut,NU,1,1,1,0,0,0,0

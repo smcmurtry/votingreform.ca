@@ -23,24 +23,16 @@
 <body>
   <div id='main'>
 
-  <div id='nav'>
-    <div id='nav-inner'>
-    <div class='dropdown-div'>
-      <label for='election-dropdown'>Choose an election</label>
-      <select id='election-dropdown'></select>
-    </div>
-    <div class='dropdown-div'>
-      <label for='voting-system-dropdown'>Choose a voting system</label>
-      <select id='voting-system-dropdown'></select>
-    </div>
-    <div class='dropdown-div'>
-      <label for='region-dropdown'>Show results for</label>
-      <select id='region-dropdown'></select>
-    </div>
-  </div>
-  </div>
+  <header id='site-header'>
+    <a id='site-title' href='./'>Voting Reform</a>
+    <nav>
+      <a href='./' class='current'>Results</a>
+      <a href='./methods/'>How the simulations work</a>
+      <a href='#sources'>Sources</a>
+    </nav>
+  </header>
 
-  <h1 id='top-content'>Voting Reform</h1>
+  <h1 id='top-content'>Voting Reform in Canada</h1>
 
     <div class='section' id='summary-section'>
       <h2>How much does First Past the Post distort the vote?</h2>
@@ -65,6 +57,25 @@
       </p>
     </div>
 
+    <div class='section' id='explore'>
+      <h2>Explore the results</h2>
+      <p>Pick an election and a voting system to see who would have won, and how closely the seats match the votes.</p>
+      <div id='controls'>
+        <div class='dropdown-div'>
+          <label for='election-dropdown'>Election</label>
+          <select id='election-dropdown'></select>
+        </div>
+        <div class='dropdown-div'>
+          <label for='voting-system-dropdown'>Voting system</label>
+          <select id='voting-system-dropdown'></select>
+        </div>
+        <div class='dropdown-div'>
+          <label for='region-dropdown'>Show results for</label>
+          <select id='region-dropdown'></select>
+        </div>
+      </div>
+    </div>
+
     <div class='section' id='desc-section'>
       <h2>How does <span id='system-title' class='changeable'>First Past the Post</span> work?</h2>
 
@@ -78,12 +89,14 @@
           <div>
             Under alternative vote (AV), each riding elects one Member of Parliament (MP). Voters rank candidates in order of preference. The winning candidate must have the support of a majority of voters in the riding, if necessary via a transfer of votes from eliminated candidates.
           <span class='source'>— <a href='https://web.archive.org/web/2017/http://www.samaracanada.com/samara-in-the-classroom/electoral-reform/alternative-vote/'>Samara</a></span></div>
+          <p class='method-link'><a href='./methods/alternative-vote.html'>How the Alternative Vote simulation works &rarr;</a></p>
         </div>
 
       <div class='DMP'>
         <div>
           Dual-member proportional representation (DMP) is a voting system designed to produce proportional election results across a region by electing two representatives in each of the region’s districts. The 1st seat in every district is awarded to the candidate who receives the most votes, similar to first-past-the-post voting (FPTP). The 2nd seat is awarded to one of the remaining district candidates so that proportionality is achieved across the region, using a calculation that aims to award parties their seats in the districts where they had their strongest performances.
           <span class='source'>— <a href='https://en.wikipedia.org/wiki/Dual-member_proportional_representation'>Wikipedia</a></span></div>
+          <p class='method-link'><a href='./methods/dual-member-proportional.html'>How the Dual Member Proportional simulation works &rarr;</a></p>
         </div>
 
       <div class='MMP'>
@@ -92,12 +105,14 @@
 
           Voters have two votes: one for a candidate running in their riding, and a second for a party or a candidate on a party list.
           <span class='source'>— <a href='https://web.archive.org/web/2017/http://www.samaracanada.com/samara-in-the-classroom/electoral-reform/mixed-member-proportional-representation/'>Samara</a></span></div>
+          <p class='method-link'><a href='./methods/mixed-member-proportional.html'>How the Mixed Member Proportional simulation works &rarr;</a></p>
         </div>
 
         <div class='STV'>
           <div>
             The single transferable vote (STV) combines elements of different systems to both achieve a relatively proportional result and to elect MPs from specific constituencies. It has ranked ballots and large ridings, each with multiple elected MPs.
             <span class='source'>— <a href='https://web.archive.org/web/2017/http://www.samaracanada.com/samara-in-the-classroom/electoral-reform/single-transferable-vote'>Samara</a></span></div>
+          <p class='method-link'><a href='./methods/single-transferable-vote.html'>How the Single Transferable Vote simulation works &rarr;</a></p>
           </div>
 
 
@@ -106,18 +121,38 @@
     <div class='section' id='section2'>
 
       <h2 class='FPTP'>What was the outcome in <span class='year-label changeable'>2025</span>?</h2>
-      <h2 class='DMP'>What if we'd used <span class='changeable'>Dual Member Proportional</span> in 2015?</h2>
-      <h2 class='MMP'>What if we'd used <span class='changeable'>Mixed Member Proportional</span> in 2015?</h2>
-      <h2 class='IRV'>What if we'd used <span class='changeable'>Alternative Vote</span> in 2015?</h2>
-      <h2 class='STV'>What if we'd used <span class='changeable'>Single Transferable Vote</span> in 2015?</h2>
+      <h2 class='DMP'>What if we'd used <span class='changeable'>Dual Member Proportional</span> in <span class='year-label changeable'>2025</span>?</h2>
+      <h2 class='MMP'>What if we'd used <span class='changeable'>Mixed Member Proportional</span> in <span class='year-label changeable'>2025</span>?</h2>
+      <h2 class='IRV'>What if we'd used <span class='changeable'>Alternative Vote</span> in <span class='year-label changeable'>2025</span>?</h2>
+      <h2 class='STV'>What if we'd used <span class='changeable'>Single Transferable Vote</span> in <span class='year-label changeable'>2025</span>?</h2>
 
 
       <p class='FPTP'>The results below are the actual election results from <span class='year-label'>2025</span>.</p>
-      <p id='sim-note'>Simulated results under other voting systems are only available for the 2015 election. Choosing another voting system above will switch to 2015.</p>
-      <p class='DMP STV'>The results below are from a simulation done using Elections Canada voting results. They do not take into account changes in voting behaviour that would result from a change to the electoral system.</p>
+      <p class='IRV'>
+        The results below are a simulation: the votes actually cast are treated as first choices, and polling on voters' second choices is used to redistribute the votes of eliminated candidates in each riding.
+        <span class='only-contributed'>The 2015 simulation was done by &Eacute;ric Grenier.</span>
+        <span class='only-simulated'>It follows the method &Eacute;ric Grenier used for 2015.</span>
+      </p>
+      <p class='DMP'>
+        The results below are a simulation using the votes actually cast, with ridings merged in pairs into two-member districts.
+        <span class='only-contributed'>The 2015 simulation was done by Rhys Goldstein.</span>
+        <span class='only-simulated'>It follows the method Rhys Goldstein used for 2015.</span>
+        This design has slightly more MPs than the actual House of Commons.
+      </p>
       <p class='MMP'>
-        The results below are from a simulation done using Elections Canada voting results. The MMP system presented here is one possible design that uses regions with an average of 10 MPs - other designs could have bigger or smaller regions. The results do not take into account changes in voting behaviour that would result from a change to the electoral system.</p>
-      <p class='IRV'>The results below are from a simulation done using Elections Canada voting results and exit polling to ask about second choices. They do not take into account changes in voting behaviour that would result from a change to the electoral system.</p>
+        The results below are a simulation using the votes actually cast. The MMP system presented here is one possible design, with regions averaging about 10 MPs &mdash; other designs could have bigger or smaller regions.
+        <span class='only-contributed'>The 2015 simulation was done by Wilf Day.</span>
+        <span class='only-simulated'>It follows the model Wilf Day built for 2015.</span>
+        This design has slightly more MPs than the actual House of Commons.
+      </p>
+      <p class='STV'>
+        The results below are a simulation using the votes actually cast, with neighbouring ridings merged into multi-member districts.
+        <span class='only-contributed'>The 2015 simulation was done by Ryan Campbell.</span>
+        <span class='only-simulated'>The districts and counting rules are our own design, and differ from the ones used for the 2015 figures.</span>
+      </p>
+      <p class='DMP MMP IRV STV'>
+        Simulations cannot capture how voters, parties and candidates would behave differently under another system. <a class='method-all' href='./methods/'>Read how the simulations work</a>.
+      </p>
 
       <div class='chart'>
         <svg id='table-chart'></svg>
@@ -150,9 +185,9 @@
       <div id='explanatory-text'>
         <p class='FPTP'>Under FPTP, each riding elects one MP.</p>
         <p class='DMP'>Under DMP, each riding would have been twice as big, and would have contained two local MPs.</p>
-        <p class='MMP'>Under MMP, provinces are split up into regions. Regions have local MPs who each represent a single riding, as well as regional MPs who represent the entire region. In the chart below, each grouping of seats within a province represents a region (R-1 through R-35).</p>
+        <p class='MMP'>Under MMP, provinces are split up into regions. Regions have local MPs who each represent a single riding, as well as regional MPs who represent the entire region. In the chart below, each grouping of seats within a province represents a region (R-1 through R-35). Seats with a border are local MPs; seats without one are regional MPs.</p>
         <p class='IRV'>Under AV, ridings boundaries would have remained the same, with one MP per riding.</p>
-        <p class='STV'>Under STV, there would have been varying numbers of MPs in each riding.</p>
+        <p class='STV'>Under STV, ridings would have been merged into larger districts, each electing several MPs.</p>
       </div>
 
       <div id='chart' class='chart'>
@@ -163,12 +198,15 @@
     </div>
 
     <div class='section'>
-      <h2>Sources</h2>
+      <h2 id='sources'>Sources</h2>
       <p>
-        Actual election results, including each party's share of the vote, are from the <a href='https://www.elections.ca/content.aspx?section=res&amp;dir=rep/off&amp;document=index&amp;lang=e'>official voting results</a> published by <a href='https://www.elections.ca/'>Elections Canada</a> for the <a href='https://www.elections.ca/content.aspx?section=res&amp;dir=rep/off/42gedata&amp;document=summary&amp;lang=e'>2015</a>, <a href='https://www.elections.ca/res/rep/off/ovr2019app/home.html'>2019</a>, <a href='https://www.elections.ca/res/rep/off/ovr2021app/home.html'>2021</a> and <a href='https://www.elections.ca/res/rep/off/ovrGE45/home.html'>2025</a> general elections. Parties other than the five listed, and independent candidates, are grouped as “Other”.
+        Actual election results, including each party's share of the vote, are from the <a href='https://www.elections.ca/content.aspx?section=res&amp;dir=rep/off&amp;document=index&amp;lang=e'>official voting results</a> published by <a href='https://www.elections.ca/'>Elections Canada</a> for the <a href='https://www.elections.ca/content.aspx?section=res&amp;dir=rep/off/42gedata&amp;document=summary&amp;lang=e'>2015</a>, <a href='https://www.elections.ca/res/rep/off/ovr2019app/home.html'>2019</a>, <a href='https://www.elections.ca/res/rep/off/ovr2021app/home.html'>2021</a> and <a href='https://www.elections.ca/res/rep/off/ovrGE45/home.html'>2025</a> general elections. Parties other than the five listed, and independent candidates, are grouped as &ldquo;Other&rdquo;.
       </p>
       <p>
-        Results for the other voting systems are simulations of the 2015 election using Elections Canada data. Mixed Member Proportional results were provided by <a href='https://wilfday.blogspot.com/'>Wilf Day</a>. <a href='https://web.archive.org/web/20170114175848/http://www.threehundredeight.com/2015/11/riding-results-with-preferential-ballot.html'>Alternative Vote results</a> were provided by Éric Grenier. Dual Member Proportional results were provided by <a href='http://rhysgoldstein.com/'>Rhys Goldstein</a>. Single Transferable Vote results were provided by Ryan Campbell.
+        Results under the other voting systems for 2015 are simulations supplied by contributors. Mixed Member Proportional results were provided by <a href='https://wilfday.blogspot.com/'>Wilf Day</a>. <a href='https://web.archive.org/web/20170114175848/http://www.threehundredeight.com/2015/11/riding-results-with-preferential-ballot.html'>Alternative Vote results</a> were provided by &Eacute;ric Grenier. Dual Member Proportional results were provided by <a href='http://rhysgoldstein.com/'>Rhys Goldstein</a>. Single Transferable Vote results were provided by Ryan Campbell.
+      </p>
+      <p>
+        Results under the other voting systems for 2019, 2021 and 2025 are simulations run for this site, following the 2015 methods as closely as possible. They use second-choice polling published by <a href='https://innovativeresearch.ca/'>Innovative Research Group</a> during each campaign, and riding boundary files from Elections Canada. The assumptions are set out in <a href='./methods/'>How the simulations work</a>, and the <a href='https://github.com/smcmurtry/votingreform.ca/tree/main/simulations'>Python code and data are on GitHub</a>.
       </p>
       <p>
         <a href='https://votingreform.ca'>votingreform.ca</a> was created by <a href='https://stephenmcmurtry.org/'>Stephen McMurtry</a>. This open source project is <a href='https://github.com/smcmurtry/electoral_reform'>available on Github</a>, and is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Please <a href='https://stephenmcmurtry.org/#contact'>get in touch</a> if you have questions or comments.

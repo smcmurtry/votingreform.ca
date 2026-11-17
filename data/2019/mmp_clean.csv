@@ -1,0 +1,342 @@
+riding_name,riding_number,party,prov_abbr,region_number,seat_type
+BC Interior and North,0,Conservative,BC,0,local
+BC Interior and North,1,Conservative,BC,0,local
+BC Interior and North,2,Conservative,BC,0,local
+BC Interior and North,3,Conservative,BC,0,local
+BC Interior and North,4,Conservative,BC,0,local
+BC Interior and North,5,NDP,BC,0,local
+BC Interior and North,6,Liberal,BC,0,regional
+BC Interior and North,7,NDP,BC,0,regional
+BC Interior and North,8,Green,BC,0,regional
+Surrey—Richmond—Abbotsford—Langley,9,Liberal,BC,1,local
+Surrey—Richmond—Abbotsford—Langley,10,Liberal,BC,1,local
+Surrey—Richmond—Abbotsford—Langley,11,Conservative,BC,1,local
+Surrey—Richmond—Abbotsford—Langley,12,Conservative,BC,1,local
+Surrey—Richmond—Abbotsford—Langley,13,Conservative,BC,1,local
+Surrey—Richmond—Abbotsford—Langley,14,Conservative,BC,1,local
+Surrey—Richmond—Abbotsford—Langley,15,Conservative,BC,1,local
+Surrey—Richmond—Abbotsford—Langley,16,Liberal,BC,1,regional
+Surrey—Richmond—Abbotsford—Langley,17,Liberal,BC,1,regional
+Surrey—Richmond—Abbotsford—Langley,18,NDP,BC,1,regional
+Surrey—Richmond—Abbotsford—Langley,19,NDP,BC,1,regional
+Surrey—Richmond—Abbotsford—Langley,20,Green,BC,1,regional
+Vancouver Island,21,NDP,BC,2,local
+Vancouver Island,22,NDP,BC,2,local
+Vancouver Island,23,NDP,BC,2,local
+Vancouver Island,24,NDP,BC,2,local
+Vancouver Island,25,Green,BC,2,local
+Vancouver Island,26,Liberal,BC,2,regional
+Vancouver Island,27,Conservative,BC,2,regional
+Vancouver—Burnaby—North Shore—Maple Ridge,28,Liberal,BC,3,local
+Vancouver—Burnaby—North Shore—Maple Ridge,29,Liberal,BC,3,local
+Vancouver—Burnaby—North Shore—Maple Ridge,30,Liberal,BC,3,local
+Vancouver—Burnaby—North Shore—Maple Ridge,31,Liberal,BC,3,local
+Vancouver—Burnaby—North Shore—Maple Ridge,32,Conservative,BC,3,local
+Vancouver—Burnaby—North Shore—Maple Ridge,33,NDP,BC,3,local
+Vancouver—Burnaby—North Shore—Maple Ridge,34,NDP,BC,3,local
+Vancouver—Burnaby—North Shore—Maple Ridge,35,NDP,BC,3,local
+Vancouver—Burnaby—North Shore—Maple Ridge,36,Other,BC,3,local
+Vancouver—Burnaby—North Shore—Maple Ridge,37,Conservative,BC,3,regional
+Vancouver—Burnaby—North Shore—Maple Ridge,38,Conservative,BC,3,regional
+Vancouver—Burnaby—North Shore—Maple Ridge,39,Conservative,BC,3,regional
+Vancouver—Burnaby—North Shore—Maple Ridge,40,NDP,BC,3,regional
+Vancouver—Burnaby—North Shore—Maple Ridge,41,Green,BC,3,regional
+Metropolitan Calgary,42,Conservative,AB,4,local
+Metropolitan Calgary,43,Conservative,AB,4,local
+Metropolitan Calgary,44,Conservative,AB,4,local
+Metropolitan Calgary,45,Conservative,AB,4,local
+Metropolitan Calgary,46,Conservative,AB,4,local
+Metropolitan Calgary,47,Conservative,AB,4,local
+Metropolitan Calgary,48,Conservative,AB,4,local
+Metropolitan Calgary,49,Liberal,AB,4,regional
+Metropolitan Calgary,50,Liberal,AB,4,regional
+Metropolitan Calgary,51,NDP,AB,4,regional
+Metropolitan Calgary,52,Green,AB,4,regional
+Metropolitan Edmonton,53,Conservative,AB,5,local
+Metropolitan Edmonton,54,Conservative,AB,5,local
+Metropolitan Edmonton,55,Conservative,AB,5,local
+Metropolitan Edmonton,56,Conservative,AB,5,local
+Metropolitan Edmonton,57,Conservative,AB,5,local
+Metropolitan Edmonton,58,Conservative,AB,5,local
+Metropolitan Edmonton,59,NDP,AB,5,local
+Metropolitan Edmonton,60,Liberal,AB,5,regional
+Metropolitan Edmonton,61,Liberal,AB,5,regional
+Metropolitan Edmonton,62,Conservative,AB,5,regional
+Metropolitan Edmonton,63,NDP,AB,5,regional
+South and North Alberta,64,Conservative,AB,6,local
+South and North Alberta,65,Conservative,AB,6,local
+South and North Alberta,66,Conservative,AB,6,local
+South and North Alberta,67,Conservative,AB,6,local
+South and North Alberta,68,Conservative,AB,6,local
+South and North Alberta,69,Conservative,AB,6,local
+South and North Alberta,70,Conservative,AB,6,local
+South and North Alberta,71,Liberal,AB,6,regional
+South and North Alberta,72,Conservative,AB,6,regional
+South and North Alberta,73,Conservative,AB,6,regional
+South and North Alberta,74,Conservative,AB,6,regional
+South and North Alberta,75,NDP,AB,6,regional
+Saskatchewan,76,Conservative,SK,7,local
+Saskatchewan,77,Conservative,SK,7,local
+Saskatchewan,78,Conservative,SK,7,local
+Saskatchewan,79,Conservative,SK,7,local
+Saskatchewan,80,Conservative,SK,7,local
+Saskatchewan,81,Conservative,SK,7,local
+Saskatchewan,82,Conservative,SK,7,local
+Saskatchewan,83,Conservative,SK,7,local
+Saskatchewan,84,Conservative,SK,7,local
+Saskatchewan,85,Liberal,SK,7,regional
+Saskatchewan,86,Liberal,SK,7,regional
+Saskatchewan,87,NDP,SK,7,regional
+Saskatchewan,88,NDP,SK,7,regional
+Saskatchewan,89,NDP,SK,7,regional
+Manitoba,90,Conservative,MB,8,local
+Manitoba,91,Conservative,MB,8,local
+Manitoba,92,Conservative,MB,8,local
+Manitoba,93,NDP,MB,8,local
+Manitoba,94,Liberal,MB,8,regional
+Manitoba,95,Conservative,MB,8,regional
+Winnipeg,96,Liberal,MB,9,local
+Winnipeg,97,Liberal,MB,9,local
+Winnipeg,98,Liberal,MB,9,local
+Winnipeg,99,Conservative,MB,9,local
+Winnipeg,100,NDP,MB,9,local
+Winnipeg,101,Conservative,MB,9,regional
+Winnipeg,102,Conservative,MB,9,regional
+Winnipeg,103,NDP,MB,9,regional
+Central Toronto—Scarborough,104,Liberal,ON,10,local
+Central Toronto—Scarborough,105,Liberal,ON,10,local
+Central Toronto—Scarborough,106,Liberal,ON,10,local
+Central Toronto—Scarborough,107,Liberal,ON,10,local
+Central Toronto—Scarborough,108,Liberal,ON,10,local
+Central Toronto—Scarborough,109,Liberal,ON,10,local
+Central Toronto—Scarborough,110,Liberal,ON,10,local
+Central Toronto—Scarborough,111,Conservative,ON,10,regional
+Central Toronto—Scarborough,112,Conservative,ON,10,regional
+Central Toronto—Scarborough,113,NDP,ON,10,regional
+Central Toronto—Scarborough,114,NDP,ON,10,regional
+Central Toronto—Scarborough,115,Green,ON,10,regional
+Mid-Eastern Ontario (Kingston—Peterborough),116,Liberal,ON,11,local
+Mid-Eastern Ontario (Kingston—Peterborough),117,Liberal,ON,11,local
+Mid-Eastern Ontario (Kingston—Peterborough),118,Conservative,ON,11,local
+Mid-Eastern Ontario (Kingston—Peterborough),119,Conservative,ON,11,local
+Mid-Eastern Ontario (Kingston—Peterborough),120,Conservative,ON,11,local
+Mid-Eastern Ontario (Kingston—Peterborough),121,Conservative,ON,11,local
+Mid-Eastern Ontario (Kingston—Peterborough),122,Liberal,ON,11,regional
+Mid-Eastern Ontario (Kingston—Peterborough),123,NDP,ON,11,regional
+Mid-Eastern Ontario (Kingston—Peterborough),124,Green,ON,11,regional
+North York—Etobicoke,125,Liberal,ON,12,local
+North York—Etobicoke,126,Liberal,ON,12,local
+North York—Etobicoke,127,Liberal,ON,12,local
+North York—Etobicoke,128,Liberal,ON,12,local
+North York—Etobicoke,129,Liberal,ON,12,local
+North York—Etobicoke,130,Liberal,ON,12,local
+North York—Etobicoke,131,Liberal,ON,12,local
+North York—Etobicoke,132,Liberal,ON,12,local
+North York—Etobicoke,133,Conservative,ON,12,regional
+North York—Etobicoke,134,Conservative,ON,12,regional
+North York—Etobicoke,135,Conservative,ON,12,regional
+North York—Etobicoke,136,NDP,ON,12,regional
+North York—Etobicoke,137,NDP,ON,12,regional
+Northern Ontario,138,Liberal,ON,13,local
+Northern Ontario,139,Liberal,ON,13,local
+Northern Ontario,140,Liberal,ON,13,local
+Northern Ontario,141,Liberal,ON,13,local
+Northern Ontario,142,Conservative,ON,13,local
+Northern Ontario,143,NDP,ON,13,local
+Northern Ontario,144,Conservative,ON,13,regional
+Northern Ontario,145,NDP,ON,13,regional
+Northern Ontario,146,Green,ON,13,regional
+Ottawa—Cornwall,147,Liberal,ON,14,local
+Ottawa—Cornwall,148,Liberal,ON,14,local
+Ottawa—Cornwall,149,Liberal,ON,14,local
+Ottawa—Cornwall,150,Liberal,ON,14,local
+Ottawa—Cornwall,151,Liberal,ON,14,local
+Ottawa—Cornwall,152,Conservative,ON,14,local
+Ottawa—Cornwall,153,Conservative,ON,14,regional
+Ottawa—Cornwall,154,Conservative,ON,14,regional
+Ottawa—Cornwall,155,NDP,ON,14,regional
+Ottawa—Cornwall,156,NDP,ON,14,regional
+Peel—Halton,157,Liberal,ON,15,local
+Peel—Halton,158,Liberal,ON,15,local
+Peel—Halton,159,Liberal,ON,15,local
+Peel—Halton,160,Liberal,ON,15,local
+Peel—Halton,161,Liberal,ON,15,local
+Peel—Halton,162,Liberal,ON,15,local
+Peel—Halton,163,Liberal,ON,15,local
+Peel—Halton,164,Liberal,ON,15,local
+Peel—Halton,165,Conservative,ON,15,local
+Peel—Halton,166,Conservative,ON,15,regional
+Peel—Halton,167,Conservative,ON,15,regional
+Peel—Halton,168,Conservative,ON,15,regional
+Peel—Halton,169,Conservative,ON,15,regional
+Peel—Halton,170,NDP,ON,15,regional
+Peel—Halton,171,NDP,ON,15,regional
+South Central (Hamilton—Niagara—Brant),172,Liberal,ON,16,local
+South Central (Hamilton—Niagara—Brant),173,Liberal,ON,16,local
+South Central (Hamilton—Niagara—Brant),174,Liberal,ON,16,local
+South Central (Hamilton—Niagara—Brant),175,Conservative,ON,16,local
+South Central (Hamilton—Niagara—Brant),176,Conservative,ON,16,local
+South Central (Hamilton—Niagara—Brant),177,Conservative,ON,16,local
+South Central (Hamilton—Niagara—Brant),178,NDP,ON,16,local
+South Central (Hamilton—Niagara—Brant),179,Liberal,ON,16,regional
+South Central (Hamilton—Niagara—Brant),180,Conservative,ON,16,regional
+South Central (Hamilton—Niagara—Brant),181,NDP,ON,16,regional
+South Central (Hamilton—Niagara—Brant),182,NDP,ON,16,regional
+South Central (Hamilton—Niagara—Brant),183,Green,ON,16,regional
+Southwestern Ontario (London—Windsor),184,Liberal,ON,17,local
+Southwestern Ontario (London—Windsor),185,Liberal,ON,17,local
+Southwestern Ontario (London—Windsor),186,Conservative,ON,17,local
+Southwestern Ontario (London—Windsor),187,Conservative,ON,17,local
+Southwestern Ontario (London—Windsor),188,Conservative,ON,17,local
+Southwestern Ontario (London—Windsor),189,Conservative,ON,17,local
+Southwestern Ontario (London—Windsor),190,Conservative,ON,17,local
+Southwestern Ontario (London—Windsor),191,NDP,ON,17,local
+Southwestern Ontario (London—Windsor),192,Liberal,ON,17,regional
+Southwestern Ontario (London—Windsor),193,Liberal,ON,17,regional
+Southwestern Ontario (London—Windsor),194,NDP,ON,17,regional
+Southwestern Ontario (London—Windsor),195,NDP,ON,17,regional
+Southwestern Ontario (London—Windsor),196,Green,ON,17,regional
+West Central Ontario (Waterloo—Barrie—Owen Sound),197,Liberal,ON,18,local
+West Central Ontario (Waterloo—Barrie—Owen Sound),198,Liberal,ON,18,local
+West Central Ontario (Waterloo—Barrie—Owen Sound),199,Liberal,ON,18,local
+West Central Ontario (Waterloo—Barrie—Owen Sound),200,Liberal,ON,18,local
+West Central Ontario (Waterloo—Barrie—Owen Sound),201,Conservative,ON,18,local
+West Central Ontario (Waterloo—Barrie—Owen Sound),202,Conservative,ON,18,local
+West Central Ontario (Waterloo—Barrie—Owen Sound),203,Conservative,ON,18,local
+West Central Ontario (Waterloo—Barrie—Owen Sound),204,Conservative,ON,18,local
+West Central Ontario (Waterloo—Barrie—Owen Sound),205,Conservative,ON,18,regional
+West Central Ontario (Waterloo—Barrie—Owen Sound),206,NDP,ON,18,regional
+West Central Ontario (Waterloo—Barrie—Owen Sound),207,NDP,ON,18,regional
+West Central Ontario (Waterloo—Barrie—Owen Sound),208,Green,ON,18,regional
+West Central Ontario (Waterloo—Barrie—Owen Sound),209,Green,ON,18,regional
+York—Durham,210,Liberal,ON,19,local
+York—Durham,211,Liberal,ON,19,local
+York—Durham,212,Liberal,ON,19,local
+York—Durham,213,Liberal,ON,19,local
+York—Durham,214,Liberal,ON,19,local
+York—Durham,215,Conservative,ON,19,local
+York—Durham,216,Conservative,ON,19,local
+York—Durham,217,Conservative,ON,19,local
+York—Durham,218,Conservative,ON,19,local
+York—Durham,219,Liberal,ON,19,regional
+York—Durham,220,Conservative,ON,19,regional
+York—Durham,221,Conservative,ON,19,regional
+York—Durham,222,NDP,ON,19,regional
+York—Durham,223,NDP,ON,19,regional
+York—Durham,224,Green,ON,19,regional
+Chaudière-Appalaches—Bas-Saint-Laurent—Gaspésie,225,Liberal,QC,20,local
+Chaudière-Appalaches—Bas-Saint-Laurent—Gaspésie,226,Conservative,QC,20,local
+Chaudière-Appalaches—Bas-Saint-Laurent—Gaspésie,227,Conservative,QC,20,local
+Chaudière-Appalaches—Bas-Saint-Laurent—Gaspésie,228,Conservative,QC,20,local
+Chaudière-Appalaches—Bas-Saint-Laurent—Gaspésie,229,Bloc,QC,20,local
+Chaudière-Appalaches—Bas-Saint-Laurent—Gaspésie,230,NDP,QC,20,regional
+Chaudière-Appalaches—Bas-Saint-Laurent—Gaspésie,231,Bloc,QC,20,regional
+Estrie—Mauricie—Centre-du-Q—Montérégie-est,232,Liberal,QC,21,local
+Estrie—Mauricie—Centre-du-Q—Montérégie-est,233,Liberal,QC,21,local
+Estrie—Mauricie—Centre-du-Q—Montérégie-est,234,Liberal,QC,21,local
+Estrie—Mauricie—Centre-du-Q—Montérégie-est,235,Conservative,QC,21,local
+Estrie—Mauricie—Centre-du-Q—Montérégie-est,236,Bloc,QC,21,local
+Estrie—Mauricie—Centre-du-Q—Montérégie-est,237,Bloc,QC,21,local
+Estrie—Mauricie—Centre-du-Q—Montérégie-est,238,Bloc,QC,21,local
+Estrie—Mauricie—Centre-du-Q—Montérégie-est,239,Conservative,QC,21,regional
+Estrie—Mauricie—Centre-du-Q—Montérégie-est,240,NDP,QC,21,regional
+Estrie—Mauricie—Centre-du-Q—Montérégie-est,241,Bloc,QC,21,regional
+Estrie—Mauricie—Centre-du-Q—Montérégie-est,242,Green,QC,21,regional
+Laval—Laurentides—Lanaudière,243,Liberal,QC,22,local
+Laval—Laurentides—Lanaudière,244,Liberal,QC,22,local
+Laval—Laurentides—Lanaudière,245,Bloc,QC,22,local
+Laval—Laurentides—Lanaudière,246,Bloc,QC,22,local
+Laval—Laurentides—Lanaudière,247,Bloc,QC,22,local
+Laval—Laurentides—Lanaudière,248,Bloc,QC,22,local
+Laval—Laurentides—Lanaudière,249,Bloc,QC,22,local
+Laval—Laurentides—Lanaudière,250,Bloc,QC,22,local
+Laval—Laurentides—Lanaudière,251,Liberal,QC,22,regional
+Laval—Laurentides—Lanaudière,252,Liberal,QC,22,regional
+Laval—Laurentides—Lanaudière,253,Conservative,QC,22,regional
+Laval—Laurentides—Lanaudière,254,NDP,QC,22,regional
+Laval—Laurentides—Lanaudière,255,Green,QC,22,regional
+Longueuil—Montérégie-centre—Suroît,256,Liberal,QC,23,local
+Longueuil—Montérégie-centre—Suroît,257,Liberal,QC,23,local
+Longueuil—Montérégie-centre—Suroît,258,Bloc,QC,23,local
+Longueuil—Montérégie-centre—Suroît,259,Bloc,QC,23,local
+Longueuil—Montérégie-centre—Suroît,260,Bloc,QC,23,local
+Longueuil—Montérégie-centre—Suroît,261,Bloc,QC,23,local
+Longueuil—Montérégie-centre—Suroît,262,Bloc,QC,23,local
+Longueuil—Montérégie-centre—Suroît,263,Liberal,QC,23,regional
+Longueuil—Montérégie-centre—Suroît,264,Liberal,QC,23,regional
+Longueuil—Montérégie-centre—Suroît,265,Conservative,QC,23,regional
+Longueuil—Montérégie-centre—Suroît,266,NDP,QC,23,regional
+Longueuil—Montérégie-centre—Suroît,267,Green,QC,23,regional
+Montreal-est,268,Liberal,QC,24,local
+Montreal-est,269,Liberal,QC,24,local
+Montreal-est,270,Liberal,QC,24,local
+Montreal-est,271,Liberal,QC,24,local
+Montreal-est,272,Liberal,QC,24,local
+Montreal-est,273,Liberal,QC,24,local
+Montreal-est,274,Bloc,QC,24,local
+Montreal-est,275,Conservative,QC,24,regional
+Montreal-est,276,NDP,QC,24,regional
+Montreal-est,277,NDP,QC,24,regional
+Montreal-est,278,Bloc,QC,24,regional
+Montreal-est,279,Green,QC,24,regional
+Montreal—West,280,Liberal,QC,25,local
+Montreal—West,281,Liberal,QC,25,local
+Montreal—West,282,Liberal,QC,25,local
+Montreal—West,283,Liberal,QC,25,local
+Montreal—West,284,Conservative,QC,25,regional
+Montreal—West,285,NDP,QC,25,regional
+Outaouais—Abitibi-Témiscamingue—Nord,286,Liberal,QC,26,local
+Outaouais—Abitibi-Témiscamingue—Nord,287,Liberal,QC,26,local
+Outaouais—Abitibi-Témiscamingue—Nord,288,Liberal,QC,26,local
+Outaouais—Abitibi-Témiscamingue—Nord,289,Bloc,QC,26,local
+Outaouais—Abitibi-Témiscamingue—Nord,290,Conservative,QC,26,regional
+Outaouais—Abitibi-Témiscamingue—Nord,291,NDP,QC,26,regional
+Quebec City—Saguenay-Lac-Saint-Jean—Côte-Nord,292,Liberal,QC,27,local
+Quebec City—Saguenay-Lac-Saint-Jean—Côte-Nord,293,Conservative,QC,27,local
+Quebec City—Saguenay-Lac-Saint-Jean—Côte-Nord,294,Conservative,QC,27,local
+Quebec City—Saguenay-Lac-Saint-Jean—Côte-Nord,295,Conservative,QC,27,local
+Quebec City—Saguenay-Lac-Saint-Jean—Côte-Nord,296,Bloc,QC,27,local
+Quebec City—Saguenay-Lac-Saint-Jean—Côte-Nord,297,Bloc,QC,27,local
+Quebec City—Saguenay-Lac-Saint-Jean—Côte-Nord,298,Bloc,QC,27,local
+Quebec City—Saguenay-Lac-Saint-Jean—Côte-Nord,299,Liberal,QC,27,regional
+Quebec City—Saguenay-Lac-Saint-Jean—Côte-Nord,300,Liberal,QC,27,regional
+Quebec City—Saguenay-Lac-Saint-Jean—Côte-Nord,301,NDP,QC,27,regional
+Quebec City—Saguenay-Lac-Saint-Jean—Côte-Nord,302,Bloc,QC,27,regional
+New Brunswick,303,Liberal,NB,28,local
+New Brunswick,304,Liberal,NB,28,local
+New Brunswick,305,Liberal,NB,28,local
+New Brunswick,306,Liberal,NB,28,local
+New Brunswick,307,Conservative,NB,28,local
+New Brunswick,308,Conservative,NB,28,local
+New Brunswick,309,Conservative,NB,28,regional
+New Brunswick,310,NDP,NB,28,regional
+New Brunswick,311,Green,NB,28,regional
+New Brunswick,312,Green,NB,28,regional
+Nova Scotia,313,Liberal,NS,29,local
+Nova Scotia,314,Liberal,NS,29,local
+Nova Scotia,315,Liberal,NS,29,local
+Nova Scotia,316,Liberal,NS,29,local
+Nova Scotia,317,Liberal,NS,29,local
+Nova Scotia,318,Liberal,NS,29,local
+Nova Scotia,319,Conservative,NS,29,local
+Nova Scotia,320,Conservative,NS,29,regional
+Nova Scotia,321,NDP,NS,29,regional
+Nova Scotia,322,NDP,NS,29,regional
+Nova Scotia,323,Green,NS,29,regional
+Prince Edward Island,324,Liberal,PE,30,local
+Prince Edward Island,325,Liberal,PE,30,local
+Prince Edward Island,326,Conservative,PE,30,regional
+Prince Edward Island,327,Green,PE,30,regional
+Newfoundland & Labrador,328,Liberal,NL,31,local
+Newfoundland & Labrador,329,Liberal,NL,31,local
+Newfoundland & Labrador,330,Liberal,NL,31,local
+Newfoundland & Labrador,331,Liberal,NL,31,local
+Newfoundland & Labrador,332,NDP,NL,31,local
+Newfoundland & Labrador,333,Conservative,NL,31,regional
+Newfoundland & Labrador,334,Conservative,NL,31,regional
+Yukon,335,Liberal,YT,32,local
+Yukon,336,Conservative,YT,32,regional
+Northwest Territories,337,Liberal,NT,33,local
+Northwest Territories,338,Conservative,NT,33,regional
+Nunavut,339,NDP,NU,34,local
+Nunavut,340,Liberal,NU,34,regional
